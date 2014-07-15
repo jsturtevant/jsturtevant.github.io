@@ -1,12 +1,23 @@
-# Site settings
-title: Aspen Roots Development
-email: jsturtevant@gmail.com	
-description: "Developing software from the roots up."
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: aspenwilder
-github_username:  jsturtevant
+# Dependencies
+markdown:         redcarpet
+pygments:         true
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Aspen Roots Development
+tagline:          'Developing software from the roots up.'
+description:      'need to come up with something.'
+url:              http://jsturtevant.github.io
+author:
+  name:           'James Sturtevant'
+  url:            https://twitter.com/aspenwilder
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/jsturtevant
