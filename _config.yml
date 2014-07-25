@@ -2,7 +2,7 @@
 markdown:         redcarpet
 
 # Permalinks
-permalink:        pretty
+permalink:        posts/:title
 
 # Setup
 title:            Aspen Roots Development
