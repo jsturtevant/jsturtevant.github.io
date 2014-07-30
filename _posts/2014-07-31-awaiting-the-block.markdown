@@ -5,8 +5,8 @@ date:   2014-07-31
 categories: csharp
 ---
 
-The **await** keyword in C# is magical.  It seems to just work.  Throw an **await** in front of the resource intensive 
-code  and slap an **async** on the method.  Do this on all the methods in the chain and it just works. Right?  
+The **await** keyword in C# is magical.  It seems to just work.  Throw an **await** in front of a resource intensive 
+function  and slap an **async** on the method.  Do this on all the methods in the chain and it just works. Right?  
 
 Although it does *just* work most of the time there are quite a few *gotcha's*.  There are many [best practices](http://msdn.microsoft.com/en-us/magazine/jj991977.aspx) that have been shared to alleviate some of the  scenario's you might run 
  into.
@@ -22,7 +22,7 @@ Although it does *just* work most of the time there are quite a few *gotcha's*. 
   making the web service call you could end up in a blocked state.
  
 ## Blocked
- Take a look at the code below from a click even on a simple WinForms app created for testing.  What do you think will 
+ Take a look at the code below from a click even on a simple WinForms app.  What do you think will 
  happen to the responsiveness of the form?
  
 {% highlight csharp %}
@@ -40,7 +40,7 @@ and then calling invoke on the UI thread is one way to get responsiveness back. 
 difficult 
 for beginners
  to 
-understand but now with **async** and **await** we have a new, simpler way to stay responsive.
+understand. With **async** and **await** we have a new, simpler way to stay responsive.
 
 ## Async to the Rescue
 Let's take a look at the code block below.  What do you think will happen to the responsiveness of the form this time?
@@ -56,7 +56,7 @@ private async void async1Click(object sender, EventArgs e)
 
 Did you guess that it would be responsive?  Good guess, but this was a trick question and the *gotcha* I would like 
 to share with you.  To understand why this is not going to keep the UI responsive we have see the implementation of 
-the ```primenumberAsync()``` and have basic understanding of what happening when 
+the ```primenumberAsync()``` and have basic understanding of what is happening when 
 the code is compiled using the **await** and **async** keywords.
 
 Let's see what is happening in the implementation of ```primenumberAsync()```:
