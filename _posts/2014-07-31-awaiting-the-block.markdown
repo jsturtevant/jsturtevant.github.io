@@ -7,12 +7,12 @@ categories: csharp
 
 The **await** keyword in C# is magical.  It seems to just work.  Throw an **await** in the front of the offending code
  and slap an **async** on the method.  Do this on all the methods in the chaing and it just works. Right?  Although it 
- does *just* work most of the times there are quite a few *gotcha's*.  This guy talks about this one and 
- that guy talks about that one. 
+ does *just* work most of the time there are quite a few *gotcha's*.  There are many [best practices](http://msdn
+ .microsoft.com/en-us/magazine/jj991977.aspx) that have been shared to alleviate some of the  scenario's you might run 
+ into.
  
- I recently watch an awesome pluralsight video by Skeet that went into depth on how **await** works.  I recommend the 
- video as it goes into great depth on how async works under the covers, which is out of scope for this article.  
- Here I am going to cover a topic that I had to play with a bit more to understand.
+ I recently watch an awesome [Pluralsight video](http://pluralsight.com/training/courses/TableOfContents?courseName=skeet-async&highlight=jon-skeet_skeet-async-m1-intro*3!jon-skeet_skeet-async-m2-await*0,2!jon-skeet_skeet-async-m5-testing*0!jon-skeet_skeet-async-m3-blocking#skeet-async-m1-intro) by Jon Skeet that went into depth on how **await** works.  I  recommend  the  video (and pluralsight in general) as it goes into great depth on how async works under the 
+ covers, which is out of scope for this article.   Here I am going to cover a topic that I had to play with a bit more to understand.
  
 ## Blocked
  Take a look at the code below from a click even on a simple WinForms app created for testing.  What do you think will 
