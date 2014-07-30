@@ -6,8 +6,8 @@ categories: csharp
 ---
 
 The **await** keyword in C# is magical.  It seems to just work.  Throw an **await** in the front of the offending code
- and slap an **async** on the method.  Do this all the way up and it just works. Right?  Although it does *just* work 
- alot of the times there are quite a few gotcha's.  This guy talks about this one and 
+ and slap an **async** on the method.  Do this on all the methods in the chaing and it just works. Right?  Although it 
+ does *just* work most of the times there are quite a few *gotcha's*.  This guy talks about this one and 
  that guy talks about that one. 
  
  I recently watch an awesome pluralsight video by Skeet that went into depth on how **await** works.  I recommend the 
@@ -93,4 +93,9 @@ private async Task<long> primenumberAsync2()
 {% endhighlight %}
 
 ## Conclusion
-**Await** and **async** 
+**Await** and **async** are power additions to the C# language but with great power comes great responsibility.  In 
+this post we took a look at one scenario where **await** and **async** are not magic bullets and a little bit of care
+ needs to be taken to make sure that the behavior we are expecting at runtime is properly implemented.
+ 
+ 
+ 
