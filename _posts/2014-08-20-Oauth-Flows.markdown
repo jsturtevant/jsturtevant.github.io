@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "OAuth 2.0 Flows"
+date:   2014-08-20
+categories: security
+---
+
+I have been doing a lot research on OAuth 2.0 and have found that most articles assume that you know the specification and focus on only one type of flow. To make matter's worse some authorization services only offer some of the flows (for example [Azure Active Directory](http://msdn.microsoft.com/en-us/library/azure/dn645545.aspx))  This lead to some confusion until I was about to read enough articles to cover all the OAuth 2.0 flows.  
+
+Below is a very high level overview of the numerous OAuth 2.0 Flows.  It does not go into the details of the flows and should only be used as a reference.  If I missed any let me know and I will update this post.
+
+## The Flows
+
+### Resource Owner Password Flow
+The user gives the  client their credentials and the client goes directly to the Authorization server and is returned an Access token.
+
+This is one of the simplest flow of the OAuth 2.0 protocol and also the most surprising.  It is surprising because the user shares their credentials with client, which is contradictory to the purpose of the OAuth protocol.  
+
+For all the .NET developers out there this is the flow that is available out of the box with Web API 2.
+
+### Authorization Grant Flow
+The user is redirected to the Authorization server and is given an Authorization Token.  The client then goes back to the Authorization server and exchanges the Authorization Token for an Access token.
+
+In this flow the client never has access to the user's credentials.
+
+### Implicit Flow
+The user is redirected to the Authorization Server to authenticate and the client is directly given an Access Token.  The difference between this and the Resource Owner Password Flow is that the client is never privy to the user's credentials.
+
+### Client Flow
+In this flow the user is not involved and does not grant access to any of the user's resources.  Instead the client goes to the authorization server and gains access to resources that the client owns. 
+
+
+## Other Resources
+Check out [HyTech's Oauth2 Introduction](http://techblog.hybris.com/2012/06/01/oauth2-authorization-code-flow/) for a deeper discussion of the the flows.
+
+I also found [Designing Evolvable Web APIs with ASP.NET's](http://chimera.labs.oreilly.com/books/1234000001708/ch16.html) chapter on OAuth 2.0 helpful.  
