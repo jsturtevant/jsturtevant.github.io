@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Music Flow"
+title:  "Music and The Flow"
 date:   2014-09-11
 categories: fun
 ---
