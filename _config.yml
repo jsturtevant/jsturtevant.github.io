@@ -6,8 +6,8 @@ permalink:        posts/:title
 
 # Setup
 title:            Aspen Roots Development
-tagline:          'Developing software from the roots up.'
-description:      'need to come up with something.'
+tagline:          'Software from the roots up.'
+description:      'Software from the roots up.'
 url:              http://jsturtevant.github.io
 author:
   name:           'James Sturtevant'
