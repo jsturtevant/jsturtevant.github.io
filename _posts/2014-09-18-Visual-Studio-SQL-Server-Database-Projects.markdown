@@ -18,7 +18,7 @@ A Database project is associated with a SQL Server database and allows for devel
 There are two many exciting features to cover them all but here's a list of my favorite so far:
 
 - [Schema comparison](http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/VS108) - compare schemas between your development database and production
-- [Data comparison](http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/VS108) - compare data in the tables between different databases
+- [Data comparison](http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/VS108) - compare data between different databases
 - Source Control - ***Yes, Source Control for your SQL***
 - Change Script generation
 - [Unit Testing](http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/QE107) - ***Yes, Unit Testing (what is this craziness?)***
@@ -27,6 +27,6 @@ There are two many exciting features to cover them all but here's a list of my f
 - Deployment
 - Windows Azure SQL Database Support
 
-And don't worry you can do all your ad hoc SQL queries right from Visual studio with out having to boot up SSMS.  You can find out more about the tooling from the Channel 9 video  [Introducing SQL Server Database Projects Tooling in Visual Studio 2013](http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/VS111)
+And don't worry you can do all your ad hoc SQL queries right from Visual studio without having to boot up SSMS.  You can find out more about the tooling from the Channel 9 video  [Introducing SQL Server Database Projects Tooling in Visual Studio 2013](http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/VS111)
 
 I have only just started to explore the tools but can tell it is going to improve my team's database management practices.  In what ways do you see your self using these tools?  What must try features have I missed?
