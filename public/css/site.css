@@ -31,3 +31,7 @@ footer {
 .page, .post {
 	margin-bottom:0;
 }
+
+.post img {
+	width:100%
+}
