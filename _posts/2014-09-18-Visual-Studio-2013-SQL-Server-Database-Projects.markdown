@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Visual Studio SQL Server Database Projects"
+title:  "Visual Studio 2013 SQL Server Database Projects"
 date:   2014-09-18
 categories: SSMS, SQL
 ---
