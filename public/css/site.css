@@ -23,3 +23,11 @@ font-size: 2.25rem;
 footer {
     font-size: .7em;
 }
+
+.related {
+	padding-top: 0;
+}
+
+.page, .post {
+	margin-bottom:0;
+}
