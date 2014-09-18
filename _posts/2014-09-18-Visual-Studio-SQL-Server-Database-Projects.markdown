@@ -10,7 +10,7 @@ Visual Studio is a large application with so many features that you sometimes yo
 ## SQL Server Database Projects
 A co-worker of mine, Floyd, (you can find him at [@fhilton](https://twitter.com/fhilton))  recently discovered SQL Server Database Project templates and data tools and I think he found a gold mine:
 
-![Visual Studio 2013 SQL Server Database Project Template]({{ site.url }}/assets/vs-2013-sql-server-database-template.jpg)
+![Visual Studio 2013 SQL Server Database Project Template]({{ site.url }}/assets/vs-2013-sql-server-database-template.PNG)
 
 A Database project is associated with a SQL Server database and allows for developers to pull in all the various assets of the database and use source control. You can also start a new database using the template and deploy right from Visual Studio.
 
