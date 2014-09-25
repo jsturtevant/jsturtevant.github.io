@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Visual Studio Extensions-Ace-Jump"
+title:  "Visual Studio Extensions AceJump"
 date:   2014-09-25
 categories: Visual Studio
 ---
