@@ -29,16 +29,17 @@ The ```app.CreatePerOwinContext<T>();``` creates one instance of the given type 
 
 It is important to note the order in which the ```app.CreatePerOwinContext<T>();``` is called.  Since a ```SigninManager``` requires a ```UserManger``` the call to create the ```SigninManager``` on the OWIN context must come after the call to create the ```UserManager```
 
-## Creating a Custom SigninManager
+## UserManager Factory Method
 
 {% highlight csharp %}
 public static CustomUserManager Create()
 {
     var manager = new CustomUserManager(new CustomUserStore());
-
     return manager;
 }
 {% endhighlight %}
+
+## SignInManager Factory Method
 
 {% highlight csharp %}
 public static CustomSignInManager Create(IdentityFactoryOptions<CustomSignInManager> options, IOwinContext context)
