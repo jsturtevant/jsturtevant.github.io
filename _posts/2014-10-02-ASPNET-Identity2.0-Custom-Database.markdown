@@ -4,6 +4,9 @@ title:  "ASP.NET Identity 2.1 Custom Database"
 date:   2014-10-02
 categories: ASP.NET
 ---
+<p class="message">This is a two post series.  You can read the second post at <a href="/posts/ASPNET-Identity-Custom-Database-and-OWIN">ASPNET Identity Custom Database and OWIN.</a>
+</p>
+
 
 I have to admit when I first took a deeper look at the [ASP.NET's Identity model](http://www.asp.net/identity) in version 2.1 I was a bit overwhelmed.  I was looking for a way to authenticate a user against an existing database using Forms authentication to create an authentication cookie after verifying the user's credentials.  Looking at the template ASP.NET Individual User Accounts I found that the ```SignInManager``` was responsible for creating the authentication cookie and so I started there. 
 

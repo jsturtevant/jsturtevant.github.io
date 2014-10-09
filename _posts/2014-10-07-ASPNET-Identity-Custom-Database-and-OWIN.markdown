@@ -5,6 +5,9 @@ date:   2014-10-09
 categories: ASP.NET
 ---
 
+<p class="message">This is a two post series.  You may like to read the first post <a href="/posts/ASPNET-Identity2.0-Custom-Database">ASPNET Identity and Custom Database.</a>
+</p>
+
 In the last [post](/posts/ASPNET-Identity2.0-Custom-Database/), we covered how to create a custom ```SigninManager```.  At first glance there was a lot of work to be down but after diving in we found that there were only a few simple classes we had to set up.  
 
 In this post, I will demonstrate how to use [OWIN](http://www.asp.net/aspnet/overview/owin-and-katana) to load our ```SigninManager``` for each request.  By the end of the post we will have a ```SigninManager``` that we can use to create an authentication cookie and sign a user into our system.
