@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Abstractions and IoT"
-date:   2014-10-16
+date:   2014-10-15
 categories: IoT
 ---
 
