@@ -5,11 +5,11 @@ date:   2014-10-22
 categories: ASP.NET
 ---
 
-This is another case for [naming things is hard](http://martinfowler.com/bliki/TwoHardThings.html).  It might seem obvious to some but I definitely didn't get this one right away, and I wasn't the [only one](https://aspnetidentity.codeplex.com/workitem/2178).  
+This is another case for why [naming things is hard](http://martinfowler.com/bliki/TwoHardThings.html).  It might seem obvious to some but I definitely didn't get this one right away, and I wasn't the [only one](https://aspnetidentity.codeplex.com/workitem/2178).  
 
 The ```LockoutEnabled``` flag in the ASP.NET Identity model means that the user *can be locked out*, **not** that the user *is* locked out.  
 
-For a user to be locked out the ```LockoutEnabled``` ***and*** ```LockoutEndDateUtc``` must be greater than the current date.  To enable Locking out globally you must set ```UserLockoutEnabledByDefault``` to ```true``` on the ```UserManager```:
+For a user to be locked out the ```LockoutEnabled``` must be true **and** ```LockoutEndDateUtc``` must be greater than the current date.  To enable Locking out globally you must set ```UserLockoutEnabledByDefault``` to ```true``` on the ```UserManager```:
 
 {% highlight csharp %}
 public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context)
