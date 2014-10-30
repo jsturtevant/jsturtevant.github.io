@@ -45,7 +45,7 @@ When the user is signed out in this scenario it is different from the the cookie
 
 
 ## The differences
-The difference is subtle at first glance but provides some great benefits, such as [Sign-out Everywhere](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/SingleSignOutSample/readme.txt).  But it can be confusing since the default ASP.NET Identity template only has ```validateInterval``` leaving the ```ExpireTimespan``` to the default of 14 days.   Without some digging a developer new to the ASP.NET Identity library might not immediately recognize that the ```validateInterval``` is not the same as expiring cookies on a given time fame.
+The difference is subtle at first glance but provides some great benefits, such as [Sign-out Everywhere](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/SingleSignOutSample/readme.txt).  But it can be confusing since the default ASP.NET Identity template only has ```validateInterval``` leaving the ```ExpireTimespan``` hidden and set to the default of 14 days.   Without some digging a developer new to the ASP.NET Identity library might not immediately recognize that the ```validateInterval``` is not the same as expiring cookies on a given time fame.
 
 
 
