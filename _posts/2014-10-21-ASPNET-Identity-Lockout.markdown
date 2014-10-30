@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ASPNET-Identity-Lockout"
+title:  "ASP.NET Identity Lockout"
 date:   2014-10-21
 categories: ASP.NET
 ---

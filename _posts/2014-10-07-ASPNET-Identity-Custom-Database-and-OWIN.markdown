@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ASPNET Identity Custom Database and OWIN"
+title:  "ASP.NET Identity Custom Database and OWIN"
 date:   2014-10-09
 categories: ASP.NET
 ---
