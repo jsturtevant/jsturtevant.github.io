@@ -30,7 +30,7 @@ Next the ```SigninManager``` constructor takes a ```Usermanager```.  Again this 
 {% highlight csharp %}
 public class CustomUserManager : UserManager<CustomUser>
 {
-    public CustomUser(IUserStore<CustomUser> store)
+    public CustomUserManager(IUserStore<CustomUser> store)
         : base(store)
     {
     }
