@@ -7,7 +7,7 @@ categories: csharp, fun
 
 One of the best things I have started to do over the last year is listen to technical podcasts.  Whether I am commuting to work or washing the dishes, I get to stay on top of the latest tech news, learn about new (and old) technologies and get direct access to some of the brightest and most talented people in our industry.  On top of all that, they are often entertaining.
 
-Podcast players are notoriously bad.  Recently, I made the switch to [PlayerFM].(https://player.fm/). I enjoy PlayerFM because it syncs across platforms, has double speed (I listen at 1.7x - give it a try you might never go back) and it is easy to share useful links.
+Podcast players are notoriously bad.  Recently, I made the switch to [PlayerFM](https://player.fm/). I enjoy PlayerFM because it syncs across platforms, has double speed (I listen at 1.7x - give it a try you might never go back) and it is easy to share useful links.
 
 Below is a short list of some of my favorites right now.  Even though I currently work in .NET I find the podcasts about other languages interesting and useful to broadening my horizons.
 
