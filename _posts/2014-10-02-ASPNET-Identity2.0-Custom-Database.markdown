@@ -88,13 +88,13 @@ public class CustomUserStore : IUserStore<CustomUser>
 
     public async Task<CustomUser> FindByIdAsync(string userId)
     {
-        CustomUser user = await this.database.CustomUsers.Where(c => c.UserId == userId).First();
+        CustomUser user = await this.database.CustomUsers.Where(c => c.UserId == userId).FirstOrDefaultAsync();
         return user;
     }
 
     public async Task<CustomUser> FindByNameAsync(string userName)
     {
-       CustomUser user = await this.database.CustomUsers.Where(c => c.UserName == userName).First();
+       CustomUser user = await this.database.CustomUsers.Where(c => c.UserName == userName).FirstOrDefaultAsync();
         return user;
     }
 }
