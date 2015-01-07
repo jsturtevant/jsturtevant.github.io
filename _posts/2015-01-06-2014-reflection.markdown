@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "2014 Reflection"
+date:  "2015-01-06"
+categories:
+---
+
+It is the time of year when many reflect back on the previous year and take stock of their successes and failures.  Reflection is an important skill that often gets over looked.  Without reflection we always move onwards without ever taking the time to learn from the expereinces we have had.
+
+2014 was the first year that I set goals at the beginning of the year and followed through with them. It has been a fun experience.  I can attribute the successful experience to my mastermind group.  Without their support I would have likely never gotten started or had the motivation to follow through.
+
+## Accomplishments
+A few of the highlights (in no particular order) from the past year:
+
+- [Visual Studio AceJump Extension][124c2f8c] - Has a 5 star rating and over 200 hundred downloads in the [Visual Studio Extension Gallery](https://visualstudiogallery.msdn.microsoft.com/2d045428-ec7e-4a77-802c-5365f9ddafa2)
+- [My Blog](http://www.aspenrootsdevelopment.com/) - Writing about technical topics has proven to be an activity that I really enjoy.
+- [GitHub Repositories](https://github.com/jsturtevant) - More than 1 commit per day last year on several small side projects such as a [Jeykll Vagrant VM](https://github.com/jsturtevant/jekyll-vagrant) and my [Chocolatey Recipe](https://github.com/jsturtevant/chocolatey-recipe).
+- [MCSD: Web Applications Certification](https://www.microsoft.com/learning/en-us/mcsd-web-apps-certification.aspx) - Passing this exam was challenging and rewarding.
+- [Augusta Polyglot Programming Group](http://augusta-polyglot.github.io/) - I co-founded and organize the
+group with my friend [Floyd Hilton](http://floydhilton.com/).  It has turned out to be a huge success.  We have met alot of amazing poeple and learned about some really interesting topics.
+
+## Lessons Learned
+### Community
+Community is important.  Whether it is small group of friends or a a larger group, community will help provide motivation and support for any activity you try to accomplish.  If you are not a member of a local community, join one or start one, it will change your life.
+### Entrepenureship
+There are many different types of entrepreneurs.  I have struggled with my entrepreneurial spririt over the last year and half. It was while listening to a [podcast][6e346d9d] this year, [Startups for the Rest of Us](http://www.startupsfortherestofus.com/episodes/episode-214-our-goals-for-2015), I realized that there are different motivations and options for feeding that spirit.
+### Diversity
+Diverisity is important.  It is easy to overlook ideas becuase they are different. The more diverse ideas you are presented with the better chance you have of finding the right one.
+### Consistency
+Consistency is a rare trait because it is hard.  But if you can stick with your idea/project/work then you will eventually have success.  I saw this over the past few months with my blog going from zero readers the first few months to over 700 pages views this last month.  If I had given up or stopped writing I would not have seen increase and would have called the blog expirement a failure. It was hard to put out a post a week...  there were many late nights and early mornings.  
+
+## Conculsion
+2014 was a great year for me.  When looking back there were some common themes and lessons that showed up time and time again.  Learning from them has helped me plan to make the next year even better.  
+
+
+  [124c2f8c]: http://jsturtevant.github.io/posts/Visual-Studio-Extensions-Ace-Jump "Visual Studio Extensions AceJump"
+
+  [6e346d9d]: http://jsturtevant.github.io/posts/Tech-Podcasts "Tech Podcasts"
