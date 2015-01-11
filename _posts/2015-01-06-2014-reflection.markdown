@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "2014 Reflection"
-date:  "2015-01-06"
-categories:
+title: 2014 Reflection
+date: "2015-01-06"
+categories: retrospective
 ---
 
 It is the time of year when many reflect back on the previous year and take stock of their successes and failures.  Reflection is an important skill that often gets over looked.  Without reflection we always move onwards without ever taking the time to learn from the expereinces we have had.
@@ -33,6 +33,6 @@ Consistency is a rare trait because it is hard.  But if you can stick with your 
 2014 was a great year for me.  When looking back there were some common themes and lessons that showed up time and time again.  Learning from them has helped me plan to make the next year even better.  
 
 
-  [124c2f8c]: http://jsturtevant.github.io/posts/Visual-Studio-Extensions-Ace-Jump "Visual Studio Extensions AceJump"
+  [124c2f8c]: http://www.aspenrootsdevelopment.com/posts/Visual-Studio-Extensions-Ace-Jump "Visual Studio Extensions AceJump"
 
-  [6e346d9d]: http://jsturtevant.github.io/posts/Tech-Podcasts "Tech Podcasts"
+  [6e346d9d]: http://www.aspenrootsdevelopment.com/posts/Tech-Podcasts "Tech Podcasts"
