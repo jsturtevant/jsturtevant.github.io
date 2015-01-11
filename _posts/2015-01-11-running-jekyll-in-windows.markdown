@@ -32,7 +32,7 @@ Combining the two ideas I created a [Vagrant Configuration for Jekyll](https://g
 1. In the VM prompt ```cd /vagrant/<YourProjectFolder>```
 2. Start the Jekyll server ```jekyll serve --force_polling``` ([force polling is required](http://stackoverflow.com/a/23084706/697126) with vagrant because of share)
 3. On your host machine you can open any browser and navigate to ```localhost:4000```
-4. Work on you project on your host machine and see updates as they happen!
+4. Work on you project on your host machine and see updates as they happen on ```localhost:4000```!
 
 ## Conclusion
 [Jekyll](http://jekyllrb.com/) is a fun blogging platform but the support for Windows is limited.  There are ways to install Jekyll directly on the host machine but they are tedious and error prone.  By leveraging [Vagrant](https://www.vagrantup.com/) we can have a fast, repeatable Jekyll  setup that is in sync with [GitHub Pages](https://pages.github.com/) environment.
