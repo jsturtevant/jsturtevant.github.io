@@ -3,8 +3,8 @@ layout: post
 title:  "Chocolatey and Boxstarter"
 date:   2014-12-16
 categories:
-  -fun
-  -windows
+  - fun
+  - windows
 ---
 
 Setting up a new computer is never fun.  That has all changed with some great tools called [Chocolatey](https://chocolatey.org) and [Boxstarter](http://boxstarter.org).  Long gone are the days of searching from site to site for the *download here* link.  No longer will you sit there clicking through installers.  Never again will you forget that to install the seldom used but critical program.

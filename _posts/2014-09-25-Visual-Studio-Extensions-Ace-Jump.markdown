@@ -3,7 +3,7 @@ layout: post
 title:  "Visual Studio Extensions AceJump"
 date:   2014-09-25
 categories:
-  -VisualStudio
+  - VisualStudio
 ---
 
 This week I released my first Visual Studio Extension [AceJump](http://visualstudiogallery.msdn.microsoft.com/2d045428-ec7e-4a77-802c-5365f9ddafa2).  I was inspired by a version of AceJump build by [John Lindquist](http://plugins.jetbrains.com/plugin/7086?pr=phpStorm) for the JetBrain tools.  I first saw him use AceJump in his tutorial video's on [egghead.io](https://egghead.io) and after installing it on [JetBrains Webstorm](http://www.jetbrains.com/webstorm/) I knew I needed to have the same functionality in Visual Studio.  I searched around the plugins in Visual Studio and didn't find anything, so I built it.

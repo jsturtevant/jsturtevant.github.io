@@ -3,8 +3,8 @@ layout: post
 title:  "Tech Podcasts"
 date:   2014-11-19
 categories:
-  -csharp
-  -fun
+  - csharp
+  - fun
 ---
 
 One of the best things I have started to do over the last year for my career is listen to technical podcasts.  Whether I am commuting to work or washing the dishes, I get to stay on top of the latest tech news, learn about new (and old) technologies and get direct access to some of the brightest and most talented people in our industry.  On top of all that, they are often entertaining.
