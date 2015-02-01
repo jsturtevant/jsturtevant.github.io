@@ -15,7 +15,7 @@ For a user to be locked out the ```LockoutEnabled``` must be true **and** ```Loc
 public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context)
 {
     var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<ApplicationDbContext>()));
-    
+
 	// Enable Lock outs
     manager.UserLockoutEnabledByDefault = true;
     manager.MaxFailedAccessAttemptsBeforeLockout = 5;
@@ -28,4 +28,3 @@ public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUs
 {% endhighlight %}
 
 This one was easy to figure out. Because the Microsoft ASP.NET Identity Team is [tracking discussions publicly](https://aspnetidentity.codeplex.com/SourceControl/latest#Readme.markdown) I was able find a [work item](https://aspnetidentity.codeplex.com/workitem/2178) with a google/bing search.  At least they didn't name it [LockoutManager](http://blog.codinghorror.com/i-shall-call-it-somethingmanager/).
-

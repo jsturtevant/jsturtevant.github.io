@@ -20,7 +20,7 @@ If you are using cookie authentication in ASP.NET Identity 2.1, there are two ti
     },
     SlidingExpiration = false,
     ExpireTimeSpan = TimeSpan.FromMinutes(30)
-});         
+});
 {% endhighlight %}
 
 ## ExpireTimeSpan
@@ -33,9 +33,9 @@ The ```validateInterval``` of the ```SecurityStampValidator.OnValidateIdentity``
 
 The Security Stamp is created anytime a password is created/changed or an external login is added/removed.  If a user changes their password then the SecurityStamp will be updated.  This results in any cookie that might have been issued previous to the password change to become invalid the next time the ```validateInterval``` occurs.  
 
-For a concrete example using the above settings (this is a unlikely example but gets the point across): 
+For a concrete example using the above settings (this is a unlikely example but gets the point across):
 
-1. User signs in at **location A**. 
+1. User signs in at **location A**.
 2. Same User changes work stations and signs in 10 minutes later at **location B**.
 3. Same User changes their password at **location B** at the 12 minute mark.
 4. The Same user goes back the the work station at **location A** and issues a request at the 20 minute mark.  
@@ -46,7 +46,3 @@ When the user is signed out in this scenario it is different from the the cookie
 
 ## The differences
 The difference is subtle at first glance but provides some great benefits, such as [Sign-out Everywhere](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/SingleSignOutSample/readme.txt).  But it can be confusing since the default ASP.NET Identity template only has ```validateInterval``` leaving the ```ExpireTimespan``` hidden and set to the default of 14 days.   Without some digging a developer new to the ASP.NET Identity library might not immediately recognize that the ```validateInterval``` is not the same as expiring cookies on a given time fame.
-
-
-
-

@@ -2,7 +2,9 @@
 layout: post
 title:  "ASP.NET Identity Custom Database and OWIN"
 date:   2014-10-09
-categories: ASP.NET
+categories:
+  - asp.net
+  - csharp
 ---
 
 <p class="message">This is a two post series.  You may like to read the first post <a href="/posts/ASPNET-Identity2.0-Custom-Database">ASPNET Identity and Custom Database.</a>
@@ -32,7 +34,7 @@ It is important to note the order in which the ```app.CreatePerOwinContext<T>()`
 The ```app.CreatePerOwinContext<T>()``` can take two different types of methods (We will see each type of callback method when we create them):
 
 1. ```Func<T> createCallback```
-2. ```Func<IdentityFactoryOptions<T>, IOwinContext, T>``` 
+2. ```Func<IdentityFactoryOptions<T>, IOwinContext, T>```
 
 ## UserManager Factory Method
 The UserManager method is the first callback method type; a simple static method that returns a new ```CustomUserManager```.  It would be possible to configure a method that also returns the CustomUserDataContext and pass it to the store. To keep it simple and show both types of methods ```app.CreatePerOwinContext<T>()``` takes I have left it out.
@@ -101,5 +103,3 @@ public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
 {% endhighlight %}
 
 Hope that helps clear up some of the steps that are required to create an authentication cookie against an existing database.  
-
-			

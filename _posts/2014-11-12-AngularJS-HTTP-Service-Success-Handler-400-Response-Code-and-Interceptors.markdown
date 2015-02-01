@@ -37,7 +37,7 @@ $httpProvider.interceptors.push(function($q) {
    'responseError': function(rejection) {
       if (canRecover(rejection)) {
 		 // if you can recover then don't call q.reject()
-         // will go to success handlers 
+         // will go to success handlers
          return responseOrNewPromise;
       }
 

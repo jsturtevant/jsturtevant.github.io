@@ -2,13 +2,15 @@
 layout: post
 title:  "ASP.NET Identity 2.1 Custom Database"
 date:   2014-10-02
-categories: ASP.NET
+categories:
+  - asp.net
+  - csharp
 ---
 <p class="message">This is a two post series.  You can read the second post at <a href="/posts/ASPNET-Identity-Custom-Database-and-OWIN">ASPNET Identity Custom Database and OWIN.</a>
 </p>
 
 
-I have to admit when I first took a deeper look at the [ASP.NET's Identity model](http://www.asp.net/identity) in version 2.1 I was a bit overwhelmed.  I was looking for a way to authenticate a user against an existing database using Forms authentication to create an authentication cookie after verifying the user's credentials.  Looking at the template ASP.NET Individual User Accounts I found that the ```SignInManager``` was responsible for creating the authentication cookie and so I started there. 
+I have to admit when I first took a deeper look at the [ASP.NET's Identity model](http://www.asp.net/identity) in version 2.1 I was a bit overwhelmed.  I was looking for a way to authenticate a user against an existing database using Forms authentication to create an authentication cookie after verifying the user's credentials.  Looking at the template ASP.NET Individual User Accounts I found that the ```SignInManager``` was responsible for creating the authentication cookie and so I started there.
 
 I found that the ```SignInManager``` constructor required a ```UserManager```  which in turned required an implementation of ```IUserStore```. And so I went in search of a way to implement my own UserStore by look at the Entity Framework  [User Store](http://msdn.microsoft.com/en-us/library/dn613259(v=vs.108).aspx).  When I saw the number of interfaces Entity Frame works UserStore implemented I froze.  Would I know what to implement and how?
 
@@ -70,19 +72,19 @@ public class CustomUserStore : IUserStore<CustomUser>
 
     public Task CreateAsync(CustomUser user)
     {
-        // TODO 
+        // TODO
         throw new NotImplementedException();
     }
 
     public Task UpdateAsync(CustomUser user)
     {
-        // TODO 
+        // TODO
         throw new NotImplementedException();
     }
 
     public Task DeleteAsync(CustomUser user)
     {
-		// TODO 
+		// TODO
         throw new NotImplementedException();
     }
 

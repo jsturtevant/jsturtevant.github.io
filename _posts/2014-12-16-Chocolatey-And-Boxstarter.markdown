@@ -2,7 +2,9 @@
 layout: post
 title:  "Chocolatey and Boxstarter"
 date:   2014-12-16
-categories: fun, windows
+categories:
+  -fun
+  -windows
 ---
 
 Setting up a new computer is never fun.  That has all changed with some great tools called [Chocolatey](https://chocolatey.org) and [Boxstarter](http://boxstarter.org).  Long gone are the days of searching from site to site for the *download here* link.  No longer will you sit there clicking through installers.  Never again will you forget that to install the seldom used but critical program.
@@ -43,11 +45,9 @@ You can also create Boxstarter scripts and install then using a URL also.  I hav
 The [RunBoxstarterInstall.bat](https://github.com/jsturtevant/chocolatey-recipe/blob/master/RunBoxstarterInstall.bat) starts your browser with the following URL:
 
 ```
-http://boxstarter.org/package/url?https://raw.githubusercontent.com/jsturtevant/chocolatey-recipe/master/chocolatey-recipe.txt 
+http://boxstarter.org/package/url?https://raw.githubusercontent.com/jsturtevant/chocolatey-recipe/master/chocolatey-recipe.txt
 ```
 
 Instead of passing package names, this time we pass the URL of a plain text Boxstarter script that contains 20+ of my favorite programs, installs windows updates and sets Windows explorer options.  Again, all *without* installing anything first.  Now come back a couple hours later and your machine is ready with everything installed!
 
 Do you use Chocolatey and Boxstarter?  What other tools do you use?
-
-

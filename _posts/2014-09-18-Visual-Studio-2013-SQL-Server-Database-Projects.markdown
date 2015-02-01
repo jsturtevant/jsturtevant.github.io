@@ -2,7 +2,9 @@
 layout: post
 title:  "Visual Studio 2013 SQL Server Database Projects"
 date:   2014-09-18
-categories: SSMS, SQL
+categories:
+  -SSMS
+  -SQL
 ---
 
 Visual Studio is a large application with so many features that you sometimes you stumble into a new one and think *if I had know that 3 years ago.*  With all the hype over new features like [Code Lens](http://msdn.microsoft.com/en-us/library/dn269218.aspx), [Peek Definition](http://msdn.microsoft.com/en-us/library/dn160178.aspx) and [ASP.NET Integration](http://blogs.msdn.com/b/webdev/archive/2013/10/16/asp-net-features-in-new-project-templates-in-visual-studio-2013.aspx) there are some features that aren't as flashy and don't get the attention they deserve...

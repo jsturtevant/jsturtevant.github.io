@@ -22,6 +22,3 @@ Along with highly available internet access, smaller/faster devices and a host o
 As developers this is an exciting time.  We have some amazing tools to work with and we get to focus on how to bring these abstractions together in new and exciting ways.  
 
 In what ways will you bring the powerful abstractions together?
-
-
-
