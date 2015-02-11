@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Atom and Markdown Writer for Jekyll
-date: "2015-02-02 13:19"
+date: "2015-02-10"
 categories:
   - jekyll
   - blog
