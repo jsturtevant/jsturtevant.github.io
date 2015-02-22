@@ -3,9 +3,9 @@ layout: post
 title: .Net IPAddress Class
 date: "2015-02-22"
 categories:
-  - csharp
-  - visualstudio
-  - .net framework tour
+- csharp
+- visualstudio
+- .net framework tour
 ---
 
 This week on the .NET Framework Tour, we are going to take a brief look at the the [IPAddress Class](https://msdn.microsoft.com/en-us/library/System.Net.IPAddress(v=vs.110).aspx) which lives in the  ```System.Net``` namespace.  The ```IPAddress``` class helps a developer work with IP addresses.  It can parse [IPv4](http://en.wikipedia.org/wiki/IPv4) and [IPv6](http://en.wikipedia.org/wiki/IPv6_address) strings and returns an ```IPAddress``` object that give us helpful information.  The class also helps with the manipulation of IP addresses.
@@ -36,6 +36,6 @@ The class can do a lot more than just parse strings so check out [MSDN](https://
 
 The class is schedule to come over to the open source [.NET Core Libraries](https://github.com/dotnet/corefx).  See all items currently planned to move to the new open source library [here](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-58-94-19/NetCore_5F00_OpenSourceUpdate.xlsx).
 
-<div class='dotnetfw-tour'>
+<p class="message">
 The .NET Framework provides helpful libraries to make you job easier, but it is impossible to know them all.  Sign up for the newsletter that will give you reminders of useful libraries you may have forgotten and maybe a few new ones!
-</div>
+</p>
