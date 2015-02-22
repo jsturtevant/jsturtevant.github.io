@@ -5,7 +5,7 @@ markdown:         redcarpet
 permalink:        posts/:title
 
 # Setup
-title:            Aspen Roots Development
+title:            James Sturtevant
 tagline:          'Software from the roots up.'
 description:      'Software from the roots up.'
 url:              http://jsturtevant.github.io
