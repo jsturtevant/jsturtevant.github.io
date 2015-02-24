@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+
+  <div class="message">
+    <p>
+      The .NET Framework provides helpful libraries to make you job easier, but it is impossible to know them all.  Sign up for the weekly newsletter that will give you reminders of useful libraries you may have forgotten and maybe a few new ones!
+    </p>
+    {% include dotnetfwtour-signup.html %}
+  </div>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<section id="comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread">
+        {% include disqus.html %}
+    </div>
+</section>

@@ -13,6 +13,7 @@ The .NET Framework provides helpful libraries and classes to enable the .NET dev
 
 In order to learn more about what the .NET Framework has to offer I will be exploring the various namespaces and types through what I am calling the .NET Framework Tour.  If you would like to join along of the adventure sign up for the .NET Tour email list:
 
-
-
+<div>
+{% include dotnetfwtour-signup.html %}
+</div>
 I will going through in no particular order exploring the functionality and features using a [repository I have started on GitHub](https://github.com/jsturtevant/DotNetTour).  If you have any favorite types or features that you use on a daily basis please send me an [email](mailto:jsturtevant@gmail.com) and I will be sure to check them out and try to do a feature on them.

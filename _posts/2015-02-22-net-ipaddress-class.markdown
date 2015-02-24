@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: fwtpost
 title: .Net IPAddress Class
 date: "2015-02-22"
 categories:
@@ -34,7 +34,3 @@ Assert.AreEqual(AddressFamily.InterNetworkV6, ipv6Address.AddressFamily);
 The class can do a lot more than just parse strings so check out [MSDN](https://msdn.microsoft.com/en-us/library/System.Net.IPAddress(v=vs.110).aspx) for more information about the ```IPAddress``` class.  There is also a [samples project](https://github.com/jsturtevant/DotNetTour) on GitHub so you can play with the class to learn a bit more.
 
 The class is schedule to come over to the open source [.NET Core Libraries](https://github.com/dotnet/corefx).  See all items currently planned to move to the new open source library [here](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-58-94-19/NetCore_5F00_OpenSourceUpdate.xlsx).
-
-<p class="message">
-The .NET Framework provides helpful libraries to make you job easier, but it is impossible to know them all.  Sign up for the newsletter that will give you reminders of useful libraries you may have forgotten and maybe a few new ones!
-</p>
