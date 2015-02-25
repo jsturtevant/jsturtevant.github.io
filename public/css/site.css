@@ -35,3 +35,28 @@ footer {
 .post img {
 	width:100%
 }
+
+#mc_embed_signup{
+  width:300px;
+  margin: 0 auto;
+}
+
+#mc_embed_signup input.email{
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin:5px 0;
+  width: 250px;
+  text-align:center;
+}
+
+#mc_embed_signup input.button {
+  background: #ac4142;
+  width: 250px;
+  margin:5px 0;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup input.button:hover {
+  background: #bf616a;
+  text-decoration: none;
+}
