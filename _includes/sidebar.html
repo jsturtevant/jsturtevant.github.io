@@ -15,11 +15,14 @@
 	   <li class="sidebar-nav-item{% if page.title == "Resources" %} active{% endif %}">
         <a href="/resources/">Resources</a>
       </li>
+      <li class="sidebar-nav-item{% if page.title == ".NET Framework Tour" %} active{% endif %}">
+        <a href="/dotnet-framework-tour/">.NET Framework Tour</a>
+      </li>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
-   
+
 		  {% assign pages_list = site.pages %}
 		  {% for node in pages_list %}
 			{% if node.title != null %}
@@ -31,7 +34,7 @@
 			{% endif %}
 		  {% endfor %}
 	   {% endcomment %}
-	  
+
        <ul class="social">
         {% if site.github_username %}<li>
           <a href="https://github.com/{{ site.github_username }}">
