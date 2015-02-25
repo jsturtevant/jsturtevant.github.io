@@ -7,7 +7,7 @@ categories:
 - .net framework tour
 ---
 
-This week on the .NET Framework Tour, we are going to take a brief look at the the [IPAddress Class](https://msdn.microsoft.com/en-us/library/System.Net.IPAddress(v=vs.110).aspx) which lives in the  ```System.Net``` namespace.  The ```IPAddress``` class helps a developer work with IP addresses.  It can parse [IPv4](http://en.wikipedia.org/wiki/IPv4) and [IPv6](http://en.wikipedia.org/wiki/IPv6_address) strings and returns an ```IPAddress``` object that give us helpful information.  The class also helps with the manipulation of IP addresses.
+This week for the [.NET Framework Tour](/dotnet-framework-tour/), we are going to take a brief look at the the [IPAddress Class](https://msdn.microsoft.com/en-us/library/System.Net.IPAddress(v=vs.110).aspx) which lives in the  ```System.Net``` namespace.  The ```IPAddress``` class helps a developer work with IP addresses.  It can parse [IPv4](http://en.wikipedia.org/wiki/IPv4) and [IPv6](http://en.wikipedia.org/wiki/IPv6_address) strings and returns an ```IPAddress``` object that give us helpful information.  The class also helps with the manipulation of IP addresses.
 
 To parse an IP address:
 {% highlight csharp %}
