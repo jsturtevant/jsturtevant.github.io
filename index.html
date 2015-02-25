@@ -15,6 +15,10 @@ title: Home
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.content }}
+    {% if post.layout == "fwtpost" %}
+      {% include fwt-signup-message.html %}
+    {% endif %}
+
   </div>
   {% endfor %}
 </div>
