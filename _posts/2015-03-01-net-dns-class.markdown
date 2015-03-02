@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: fwtpost
 title: ".NET DNS Class"
 date: "2015-03-01"
 ---
