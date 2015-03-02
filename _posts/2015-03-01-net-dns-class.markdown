@@ -8,7 +8,19 @@ Continuing with the theme of the last post, which covered the [IPAddress class](
 
 To retrieve IP addresses via the hostname:
 
+{% highlight csharp %}
+IPAddress[] ipAddresses = Dns.GetHostAddresses("jamessturtevant.com");
+
+Assert.AreEqual("162.255.119.254", ipAddresses.First().ToString());
+{% endhighlight %}
+
 To get the host namevia the IP address:
+{% highlight csharp %}
+// May fail if IP changes
+IPHostEntry hostEntry = Dns.GetHostEntry("192.30.252.131");
+
+Assert.AreEqual("github.com", hostEntry.HostName);
+{% endhighlight %}
 
 ## More Information
 The above functions show how to make synchronous calls but the ```DNS``` class has recently been given asynchronous support.  You can find the asynchronous version and more information about the ```DNS``` class on the [MSDN page](https://msdn.microsoft.com/en-us/library/System.Net.Dns(v=vs.110).aspx).  You can also find runnable examples on my [.NET Framework Tour](https://github.com/jsturtevant/DotNetTour) GitHub repository.
