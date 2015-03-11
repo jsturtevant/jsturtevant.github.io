@@ -8,16 +8,25 @@ categories:
 ---
 
 
-Today we are going to take a look in the System.Security namespace to learn how to create secure strings in .NET Framework.  When the standard string is created in your application it is stored in memory and there is no way to control when it is destroyed.  This is not ideal for applications that need to work with sensitive information such as Social Security Numbers or Credit Card numbers.  If your application works with this type of data it might be worth taking some time to evaluate the SecureString class.
+Today we are going to take a look in the ```System.Security``` namespace to learn how to create secure strings in .NET Framework.  When the standard [string](https://msdn.microsoft.com/en-us/library/362314fe.aspx) is created in your application it is stored in memory and there is no way to control when it is destroyed.  This is not ideal for applications that need to work with sensitive information such as Social Security Numbers or Credit Card numbers.  If your application works with this type of data it might be worth taking some time to evaluate the [SecureString](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx) class.
 
-The SecureString class will automatically encrypt the data when it is stored in memory.   It also implements the IDisposable interface so that you can control when the string is destroyed.  Even better than just freeing memory, the Dispose method writes binary zeros to the allocated memory before it is freed.  This ensures that the string is not readable after it's memory is done being used.
+The ```SecureString class``` will automatically encrypt the data when it is stored in memory.   It also implements the IDisposable interface so that you can control when the string is destroyed.  Even better than just freeing memory, the Dispose method writes binary zeros to the allocated memory before it is freed.  This ensures that the string is not readable after it's memory is done being used.
 
-Another feature is that the string created is mutable until you tell the string to be read-only.  This means it can be manipulated over time, where as the standard string class is immutable.  Since it is not related to the standard string class it also does not have some of the same methods to compare or convert the string.  The documentation states this is to help prevent any accidental/malicious exposure.
+Another feature is that the string created is mutable until you tell the string to be read-only.  This means it can be manipulated over time, where as the standard string class is immutable.  Since it is not related to the standard string class it also does not have some of the same methods to compare or convert the string.  The documentation states this is to help prevent any accidental/malicious exposure and suggests using the [Marshal](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal(v=vs.110).aspx) class.
 
 To use it:
 
 {% highlight csharp %}
+string test = "test";
+
 var secureString = new SecureString();
+
+foreach (var c in test)
+{
+  secureString.AppendChar(c);
+}
+Console.WriteLine(test);
+
 secureString.AppendChar('s');
 secureString.AppendChar('e');
 secureString.AppendChar('c');
@@ -25,8 +34,28 @@ secureString.AppendChar('u');
 secureString.AppendChar('r');
 secureString.AppendChar('e');
 
-// test to compare strings.
+IntPtr secureStringPointer = IntPtr.Zero;
+try
+{
+  // copy to unmanaged memory and decrypt
+  secureStringPointer = Marshal.SecureStringToGlobalAllocUnicode(secureString);
+
+  // use the pointer with a function like Win32 API logon
+  // Full example at https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.securestringtoglobalallocunicode(v=vs.110).aspx
+  // returnValue = LogonUser(userName, domainName, secureStringPointer, LOGON32_LOGON_INTERACTIVE, LOGON32_PROVIDER_DEFAULT, ref tokenHandle);
+}
+finally
+{
+  Marshal.ZeroFreeBSTR(secureStringPointer);
+}
 {% endhighlight %}
 
 ## More Information
-You can find out more information on the [MSDN SecureString page](https://msdn.microsoft.com/en-us/library/system.security.securestring%28v=vs.110%29.aspx).   You can also find runnable examples on my .NET Framework Tour GitHub [repository.](https://github.com/jsturtevant/DotNetTour)
+.NET Api's that use the ```SecureString``` class are:
+
+- [System.Diagnostics.Process.Start](https://msdn.microsoft.com/en-us/library/ed04yy3t(v=vs.110).aspx)
+- [WPF's  System.Windows.Controls.PasswordBox](https://msdn.microsoft.com/en-us/library/system.windows.controls.passwordbox.securepassword(v=vs.110).aspx)
+-  [System.Security.Cryptography.X509Certificates.X509Certificate2](https://msdn.microsoft.com/en-us/library/ms148419(v=vs.110).aspx)
+
+You can find out more information on the [MSDN SecureString page](https://msdn.mi( System.Windows.Controls)crosoft.com/en-us/library/system.security.securestring%28v=vs.110%29.aspx). And the [original announcements](http://blogs.msdn.com/b/shawnfa/archive/2006/11/01/securestring-redux.aspx) on the the .NET Security Blog  has good information on why ```SecureString``` is designed the way it is.
+I did use it in some the [samples](https://github.com/jsturtevant/DotNetTour) but you will find that I don't have to many real world examples other than taking a WPF form which takes a password and encrpyts a X509 Certificate.   If you have any good examples on how to use this class let me know.
