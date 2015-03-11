@@ -44,11 +44,11 @@ finally
 {% endhighlight %}
 
 ## More Information
-.NET Api's that use the ```SecureString``` class are:
+A few .NET Api's that use the ```SecureString``` class are:
 
 - [System.Diagnostics.Process.Start](https://msdn.microsoft.com/en-us/library/ed04yy3t(v=vs.110).aspx)
 - [WPF's  System.Windows.Controls.PasswordBox](https://msdn.microsoft.com/en-us/library/system.windows.controls.passwordbox.securepassword(v=vs.110).aspx)
 -  [System.Security.Cryptography.X509Certificates.X509Certificate2](https://msdn.microsoft.com/en-us/library/ms148419(v=vs.110).aspx)
 
 You can find out more information on the [MSDN SecureString page](https://msdn.mi( System.Windows.Controls)crosoft.com/en-us/library/system.security.securestring%28v=vs.110%29.aspx). The [original announcements](http://blogs.msdn.com/b/shawnfa/archive/2006/11/01/securestring-redux.aspx) on the the .NET Security Blog  has good information on why ```SecureString``` is designed the way it is.
-I did use it in some the [samples](https://github.com/jsturtevant/DotNetTour) but you will find that I don't have to many real world examples other than taking a WPF form which takes a password and encrpyts a X509 Certificate.   If you have any good examples on how to use this class let me know.
+I did use it in some the [samples](https://github.com/jsturtevant/DotNetTour) but you will find that I don't have to many real world examples. Taking password input from a WPF form and encrypting a X509 Certificate seems to be one of the few useful scenarios available today.   If you have any good examples on how to use this class let me know.
