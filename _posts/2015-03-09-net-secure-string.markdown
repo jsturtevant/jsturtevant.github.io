@@ -8,24 +8,17 @@ categories:
 ---
 
 
-Today we are going to take a look in the ```System.Security``` namespace to learn how to create secure strings in .NET Framework.  When the standard [string](https://msdn.microsoft.com/en-us/library/362314fe.aspx) is created in your application and stored in memory giving you no way to control when it is destroyed.  This is not ideal for applications that need to work with sensitive information such as Social Security Numbers or Credit Card numbers.  If your application works with this type of data it might be worth taking some time to evaluate the [SecureString](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx) class.
+Today we are going to take a look in the ```System.Security``` namespace to learn how to create secure strings in .NET Framework.  The standard .Net  [string](https://msdn.microsoft.com/en-us/library/362314fe.aspx) is stored in managed memory giving you no way to control when it is destroyed.  This is not ideal for applications that need to work with sensitive information such as Social Security Numbers or Credit Card numbers.  If your application works with this type of data it might be worth taking some time to evaluate the [SecureString](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx) class.
 
 The ```SecureString class``` will automatically encrypt the data when it is stored in memory.   It also implements the IDisposable interface so that you can control when the string is destroyed.  Even better than just freeing memory, the Dispose method writes binary zeros to the allocated memory before it is freed.  This ensures that the string is not readable after it's memory is done being used.
 
-Another feature is that the string created is mutable until you tell the string to be read-only.  This means it can be manipulated over time, where as the standard string class is immutable.  Since it is not related to the standard string class it also does not have some of the same methods to compare or convert the string.  The documentation states this is to help prevent any accidental/malicious exposure and suggests using the [Marshal](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal(v=vs.110).aspx) class.
+Another feature of ```SecureString``` is the string created is mutable until you tell the string to be read-only.  This means it can be manipulated over time, where as the standard string class is immutable.  Since it is not related to the standard string class it does not have some of the same methods to compare or convert the string.  The documentation states this is to help prevent any accidental/malicious exposure and suggests using the [Marshal](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal(v=vs.110).aspx) class.
 
 To use it:
 
 {% highlight csharp %}
-string test = "test";
-
+//  Could take input from console or another api
 var secureString = new SecureString();
-
-foreach (var c in test)
-{
-  secureString.AppendChar(c);
-}
-Console.WriteLine(test);
 
 secureString.AppendChar('s');
 secureString.AppendChar('e');
