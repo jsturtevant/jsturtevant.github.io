@@ -8,7 +8,7 @@ categories:
 ---
 
 
-Today we are going to take a look in the ```System.Security``` namespace to learn how to create secure strings in .NET Framework.  When the standard [string](https://msdn.microsoft.com/en-us/library/362314fe.aspx) is created in your application it is stored in memory and there is no way to control when it is destroyed.  This is not ideal for applications that need to work with sensitive information such as Social Security Numbers or Credit Card numbers.  If your application works with this type of data it might be worth taking some time to evaluate the [SecureString](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx) class.
+Today we are going to take a look in the ```System.Security``` namespace to learn how to create secure strings in .NET Framework.  When the standard [string](https://msdn.microsoft.com/en-us/library/362314fe.aspx) is created in your application and stored in memory giving you no way to control when it is destroyed.  This is not ideal for applications that need to work with sensitive information such as Social Security Numbers or Credit Card numbers.  If your application works with this type of data it might be worth taking some time to evaluate the [SecureString](https://msdn.microsoft.com/en-us/library/system.security.securestring(v=vs.110).aspx) class.
 
 The ```SecureString class``` will automatically encrypt the data when it is stored in memory.   It also implements the IDisposable interface so that you can control when the string is destroyed.  Even better than just freeing memory, the Dispose method writes binary zeros to the allocated memory before it is freed.  This ensures that the string is not readable after it's memory is done being used.
 
