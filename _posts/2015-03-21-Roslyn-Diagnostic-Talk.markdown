@@ -19,4 +19,8 @@ You can find the slides at [http://ow.ly/KCoba](http://ow.ly/KCoba).
 - [Syntax Analyzer](https://visualstudiogallery.msdn.microsoft.com/70e184da-9b3a-402f-b210-d62a898e2887)
 - [Roslyn Analyzer](http://roslynquoter.azurewebsites.net/)
 
+## More Information
+- [MSDN Article on writing live code analyzers](https://msdn.microsoft.com/en-us/magazine/dn879356.aspx)
+- [.NET Compiler Platform Introduction](http://www.pluralsight.com/courses/dotnet-compiler-platform-introduction)
+
 Thanks to everyone who came out today and a special thanks to the sponsers of the event!
