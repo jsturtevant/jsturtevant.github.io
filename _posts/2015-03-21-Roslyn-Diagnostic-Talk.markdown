@@ -11,7 +11,7 @@ categories:
 I am giving a talk today at the [23 Boston Code Camp](https://www.bostoncodecamp.com/)!  I will presenting on the new Visual Studio 2015 Roslyn Diagnostic Feature.  There are going to a lot of [great talks](https://www.bostoncodecamp.com/CC23/Schedule/Index) there today so be sure to check them out.
 
 ## Slides
-You can find the slides at [http://ow.ly/KCoba](http://ow.ly/KCoba).  
+You can find the slides at [http://ow.ly/KCoba](http://ow.ly/KCoba) and the source for the demo analyzer [here](https://github.com/jsturtevant/ReturnValueNotUsedAnalyzer).  
 
 ## Resources
 - [Visual Studio 2015 CPT](https://www.visualstudio.com/en-us/downloads/visual-studio-2015-ctp-vs.aspx)
