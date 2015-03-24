@@ -23,4 +23,4 @@ You can find the slides at [http://ow.ly/KCoba](http://ow.ly/KCoba) and the sour
 - [MSDN Article on writing live code analyzers](https://msdn.microsoft.com/en-us/magazine/dn879356.aspx)
 - [.NET Compiler Platform Introduction](http://www.pluralsight.com/courses/dotnet-compiler-platform-introduction)
 
-Thanks to everyone who came out today and a special thanks to the sponsers of the event!
+Thanks to everyone who came out today and a special thanks to the [sponsers](https://www.bostoncodecamp.com/CC23/Sponsors) of the event!
