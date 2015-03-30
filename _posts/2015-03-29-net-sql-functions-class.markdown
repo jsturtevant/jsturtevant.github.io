@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: fwtpost
 title: .NET SQL Functions Class
 date: "2015-03-29"
 categories:
