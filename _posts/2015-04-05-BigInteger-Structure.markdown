@@ -7,9 +7,13 @@ categories:
 - .net framework tour
 ---
 
-Where do you turn to if you have an integer to that is to large for the primitives supplied by the .NET Framework?  The ```BigInteger``` Structure!   The [BigInteger Structure](https://msdn.microsoft.com/en-us/library/system.numerics.biginteger(v=vs.111).aspx) in the ```System.Numerics``` namespace allows for any size signed integer to be represented.  Unlike the built in primitives such as  ```int```, ```byte```, or ```long```, the ```BigInteger``` structure does not have a lower or upper limit as represented through the *MinValue* and *MaxValue* properties on the primitives.
+Where do you turn to if you have an integer to that is to large for the primitives supplied by the .NET Framework?  The ```BigInteger``` Structure!   The [BigInteger Structure](https://msdn.microsoft.com/en-us/library/system.numerics.biginteger(v=vs.111).aspx) in the ```System.Numerics``` namespace allows for any size signed integer to be represented.  
 
-Like primitives, ```BigInteger``` is immutable but this comes with a caveat... You can get an ```OutOfMemoryException``` if you perform operations on the value that causes it to grow to large.  ```BigInteger``` has [overloaded the standard mathematical operators](https://msdn.microsoft.com/en-us/library/aa288467(v=vs.71).aspx) so that you can do math just like any other primitive numeric type:
+Unlike the built in primitives such as  ```int```, ```byte```, or ```long```, the ```BigInteger``` structure does not have a lower or upper limit as represented through the *MinValue* and *MaxValue* properties on the primitives.
+
+Like primitives, ```BigInteger``` is immutable but this comes with a caveat... You can get an ```OutOfMemoryException``` if you perform operations on the value that causes it to grow to large.  
+
+```BigInteger``` has [overloaded the standard mathematical operators](https://msdn.microsoft.com/en-us/library/aa288467(v=vs.71).aspx) so that you can do math just like any other primitive numeric type:
 
 {% highlight csharp %}
 var x = new BigInteger(1);
