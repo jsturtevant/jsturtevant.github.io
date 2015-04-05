@@ -60,3 +60,30 @@ footer {
   background: #bf616a;
   text-decoration: none;
 }
+
+.categories ul{
+  list-style: none;
+  overflow: hidden;
+  padding:0;
+}
+
+.categories a.category{
+  background-color: #bf616a;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 5px
+}
+
+.categories ul li {
+  float:left;
+  margin: 5px;
+}
+
+.posts{
+  margin-top:5px;
+  clear: both;
+}
+
+.posts ul{
+  list-style: none;
+}
