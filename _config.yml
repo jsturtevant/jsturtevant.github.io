@@ -6,8 +6,8 @@ permalink:        posts/:title
 
 # Setup
 title:            James Sturtevant
-tagline:          'Software from the roots up.'
-description:      'Software from the roots up.'
+tagline:          ''
+description:      ''
 url:              http://jsturtevant.github.io
 author:
   name:           'James Sturtevant'
