@@ -61,29 +61,29 @@ footer {
   text-decoration: none;
 }
 
-.categories ul{
+#archives .categories ul{
   list-style: none;
   overflow: hidden;
   padding:0;
 }
 
-.categories a.category{
+#archives .categories a.category{
   background-color: #bf616a;
   color: #FFF;
   border-radius: 5px;
   padding: 5px
 }
 
-.categories ul li {
+#archives .categories ul li {
   float:left;
   margin: 10px 5px;
 }
 
-.posts{
+#archives .posts{
   margin-top:5px;
   clear: both;
 }
 
-.posts ul{
+#archives .posts ul{
   list-style: none;
 }
