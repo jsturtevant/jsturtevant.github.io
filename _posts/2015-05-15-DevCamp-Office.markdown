@@ -35,7 +35,7 @@ This is a free event and is full of information:
 - Please watch the free, on-demand [Introduction to Office 365 Development video](http://www.microsoftvirtualacademy.com/training-courses/introduction-to-office-365-development?prid=ca_wwe).
 - Activate a  [free 30-day trial Azure](https://azureinfo.microsoft.com/US-FreeTrial.html) account
 - If you subscribe to MSDN, activate your [free Azure MSDN subscriber benefits](http://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits/)
-- Install [Visual Studio 2013 Pro](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx) with the latest updates, [Office 365 Developer Tools](https://visualstudiogallery.msdn.microsoft.com/a15b85e6-69a7-4fdf-adda-a38066bb5155)
+- Install [Visual Studio 2013 Community](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx) with the latest updates, [Office 365 Developer Tools](https://visualstudiogallery.msdn.microsoft.com/a15b85e6-69a7-4fdf-adda-a38066bb5155)
 
 ### Fees
 This free event is brought to you by your local Microsoft office. Delegates are responsible, however, for booking and funding their own travel and accommodation, as required.  
