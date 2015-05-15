@@ -6,7 +6,7 @@ categories:
 - events
 ---
 
-I will be at [DevCamp - Office](http://aka.ms/O365campBoston) this Monday May 15, 2015.  Come learn how to build apps using standard web technologies that extend the familiar [Office and Office 365](http://products.office.com/en-US/) experience.  
+I will be at [DevCamp - Office](http://aka.ms/O365campBoston) this Monday May 15, 2015.  Come learn how to build apps using standard web technologies that extend the familiar [Office and Office 365](http://products.office.com/en-US/) experience.  And since there are over 1 billion Office users there is a great opportunity in side the [Office Store](https://store.office.com/appshome.aspx) to reach your customers.
 
 
 This is a free event and is full of information:
