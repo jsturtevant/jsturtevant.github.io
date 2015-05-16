@@ -8,11 +8,11 @@ permalink:        posts/:title
 title:            James Sturtevant
 tagline:          ''
 description:      ''
-url:              http://jsturtevant.github.io
+url:              http://jamessturtevant.com
 author:
   name:           'James Sturtevant'
 twitter_username: aspenwilder
 github_username:  jsturtevant
-rss_feed:         atom.xml
+rss_feed:         feed.xml
 paginate:         5
 disqus_shortname: aspenrootsdevelopment
