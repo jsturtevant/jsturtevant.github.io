@@ -30,6 +30,7 @@ footer {
 
 .page, .post {
 	margin-bottom:0;
+	min-height: 700px;
 }
 
 .post img {
