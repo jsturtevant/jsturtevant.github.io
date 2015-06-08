@@ -16,6 +16,7 @@ This year I want to take the system to the next level.  I would like to be able 
 I will be building this system out over the next few months and would enjoy it if you came along for the ride.
 
 There are a lot of [powerful tools](http://www.jamessturtevant.com/posts/Abstractions-and-IoT/) to enable IoT devices.  The main technologies I will be using are:
+
 - [Eventhubs](http://azure.microsoft.com/en-us/services/event-hubs/) - Azure Event ingestion service that allows for millions of events per second
 - [Stream Analytics](http://azure.microsoft.com/en-us/services/stream-analytics/) - Azure Real-time stream processing service similar to [Apache Storm](http://storm.apache.org/)
 - [SignalR](http://signalr.net/) Real-time [websocket](https://developer.mozilla.org/en-US/docs/WebSockets) library that allows for bi-directional communication between applications.
