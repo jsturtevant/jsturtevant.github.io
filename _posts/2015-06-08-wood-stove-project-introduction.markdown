@@ -25,4 +25,4 @@ There are a lot of [powerful tools](http://www.jamessturtevant.com/posts/Abstrac
 I am going to be trying out new types of deployment and hosting options.  I will also be trying out the new design craze called [Microservices]
 (http://martinfowler.com/articles/microservices.html). I will be documenting my progress, success and failures so please be patient and understanding.
 
-Check out the code repository at https://github.com/jsturtevant/woodstove.
+Check out the code repository at [https://github.com/jsturtevant/woodstove](https://github.com/jsturtevant/woodstove).
