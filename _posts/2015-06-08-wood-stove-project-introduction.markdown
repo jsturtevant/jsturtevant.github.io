@@ -7,7 +7,7 @@ categories:
 ---
 
 ## The problem
-I live in Maine where wood stoves are plentiful.  The problem I encountered was when I would get [involved in my development ](http://www.jamessturtevant.com/posts/Music-and-The-Flow/) work I would often let the fire burn out and the house would get cold (and my wife).  
+I live in Maine where wood stoves are plentiful.  The problem I encountered was when I would get [involved in my development ](http://www.jamessturtevant.com/posts/Music-and-The-Flow/) work, I would often let the fire burn out and the house would get cold (and more importantly my wife).  
 
 In response, last year I built a prototype for a woodstove monitor, with [Floyd Hilton](http://floydhilton.com/).  The real-time monitoring system allowed me to sit in my office upstairs and see the temperature of my wood stove.  I was able to get reminders, and keep the house warmer for the family.  
 
