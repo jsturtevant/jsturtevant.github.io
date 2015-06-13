@@ -48,7 +48,7 @@ public static CustomUserManager Create()
 {% endhighlight %}
 
 ## SignInManager Factory Method
-The ```SigninManager``` has a the second callback type but is again not to complex:
+The ```SigninManager``` has a the second callback type but is again not too complex:
 
 {% highlight csharp %}
 public static CustomSignInManager Create(IdentityFactoryOptions<CustomSignInManager> options, IOwinContext context)
