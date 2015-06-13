@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "A Wood Stove monitoring system built using ASP.NET MVC on Azure with Eventhubs, Stream Analytics and SignalR"
-date: "2015-05-31"
+date: "2015-06-08"
 categories:
-- woodstove
+  - woodstove
+  - IoT
 ---
 
 ## The problem
