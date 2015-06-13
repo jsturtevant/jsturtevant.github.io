@@ -9,7 +9,7 @@ categories:
   - IoT
 ---
 
-[Python](https://www.python.org/) is a beautiful and powerful language.  Many times in just a few lines of code you can accomplish a lot.  Following that pattern the Azure team has provided an easy to use [Python API](https://github.com/Azure/azure-sdk-for-python) for the [Azure Service Bus](http://azure.microsoft.com/en-us/services/service-bus/).
+[Python](https://www.python.org/) is a beautiful and powerful language.  Many times in just a few lines of code you can accomplish amazing things.  Following the python philosophy, the Azure team has provided an easy to use [Python API](https://github.com/Azure/azure-sdk-for-python) for the [Azure Service Bus](http://azure.microsoft.com/en-us/services/service-bus/).
 
 But until recently it only worked with [Queues](https://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-queues/) and [Topics](https://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/). Interacting with the [Event Hubs](http://azure.microsoft.com/en-us/services/event-hubs/) using Python required us to write [pure rest calls](http://blog.kloud.com.au/2014/10/11/the-internet-of-things-with-arduino-azure-event-hubs-and-the-azure-python-sdk/), which works fine but is not as clean and simple as python libraries usually are.  But rejoice becuase this is no longer the case!
 
