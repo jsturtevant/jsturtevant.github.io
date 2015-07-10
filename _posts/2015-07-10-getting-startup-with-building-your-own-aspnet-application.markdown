@@ -60,4 +60,4 @@ In this first in a series of demo-rich explorations of data on Azure, take a loo
 If you're not a data scientist, but you're interested in data mining and predictive analytics, and you want to go beyond just reporting the numbers, check out this course on Azure Machine Learning (ML). ML is the inexpensive, easy-to-access, and powerful predictive analytics offering from Microsoft.
 
 ## Conclusion
-As you can see, whether you are a beginner or a [coding ninja](http://farm6.staticflickr.com/5173/5530553658_cf0a5dd64d.jpg) you can find something to advance your skills on [MVA](http://www.microsoftvirtualacademy.com/).  If you build something awesome then drop me a line and let me know!
+As you can see, whether you are a beginner or a [coding ninja](http://farm6.staticflickr.com/5173/5530553658_cf0a5dd64d.jpg) you can find something to advance your skills on [MVA](http://www.microsoftvirtualacademy.com/).  If this help and/or you build something awesome then drop me a line and let me know!
