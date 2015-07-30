@@ -11,4 +11,4 @@ Last year while studying for my [MCSD certification](https://www.microsoft.com/l
 
 {% include dice.html %}
 
-**Note:** If you are on IE 10/11 you will only see one side.  This is because IE [does not support]( http://caniuse.com/#feat=transforms3d) the ```preserve-3d property```.
+**Note:** If you are on IE 10/11 you will only see one side.  This is because IE [does not support]( http://caniuse.com/#feat=transforms3d) the ```preserve-3d property```.  But it works in the new [Edge](http://www.microsoft.com/en-us/windows/microsoft-edge) browser!
