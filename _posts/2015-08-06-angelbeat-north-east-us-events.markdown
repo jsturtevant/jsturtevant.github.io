@@ -8,7 +8,7 @@ categories:
   - azure
 ---
 
-Angelbeat is doing a series of Technology Events showcasing the best technology from top tech companies.  I will be speaking at the [Nashua](http://www.eventbrite.com/e/nashua-aug-11-registration-16936239749) and [Portland](http://www.eventbrite.com/e/portland-aug-12-registration-16936260812) events.  A list of the events in the North East:
+[Angelbeat](http://www.angelbeat.com/) is doing a series of Technology Events showcasing the best technology from top tech companies.  I will be speaking at the [Nashua](http://www.eventbrite.com/e/nashua-aug-11-registration-16936239749) and [Portland](http://www.eventbrite.com/e/portland-aug-12-registration-16936260812) events.  A list of the events in the North East:
 
 - [Boston Aug 10 Mon](http://www.eventbrite.com/e/boston-august-10-registration-15003439692), 7:30 AM to 3:00 PM (EDT) – Boston Doubletree Hotel; 400 Soldiers Field Road, Boston, MA 02134
 - [Rochester Aug 10 Mon](http://www.eventbrite.com/e/rochester-aug-10-registration-16936275857), – 1111 Jefferson Road, Rochester, NY, 14623
