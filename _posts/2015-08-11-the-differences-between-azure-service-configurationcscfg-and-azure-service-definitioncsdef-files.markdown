@@ -10,18 +10,18 @@ Remembering the differences between [Azure Service Configuration(.cscfg)](#cscfg
 
 I have complied some of the major configurations that each file contains.  Having all the optional configurations for each file in one location really helped me remember the differences and have one place to go when I needed to look it up.  Hope it helps!
 
-## <a name="cscfg"> Azure Service Configuration(.cscfg)
+## <a name="cscfg"></a> Azure Service Configuration(.cscfg)
 
 ### Certification thumbprints
 
   <Role name="Deployment">
-...
+
     <Certificates>
         <Certificate name="SampleCertificate"
             thumbprint="9427befa18ec6865a9ebdc79d4c38de50e6316ff"
             thumbprintAlgorithm="sha1" />
     </Certificates>
-...
+
 </Role>
 
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
@@ -73,7 +73,7 @@ From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 
-##<a name="csdef"> Azure Azure Service Definition(.csdef)
+##<a name="csdef"></a> Azure Azure Service Definition(.csdef)
 
 ### Startup tasks
   <WebRole name="WebRole1" vmsize="Small">
@@ -96,32 +96,27 @@ From <https://msdn.microsoft.com/en-us/library/azure/gg432991.aspx>
 
 ### Certification storage:
   <WebRole name="CertificateTesting" vmsize="Small">
-...
     <Certificates>
         <Certificate name="SampleCertificate"
                      storeLocation="LocalMachine"
                      storeName="CA" />
     </Certificates>
-...
 </WebRole>
 
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
 
 ### EndPoints
   <WebRole name="CertificateTesting" vmsize="Small">
-...
     <Endpoints>
         <InputEndpoint name="HttpsIn" protocol="https" port="443"
             certificate="SampleCertificate" />
     </Endpoints>
-...
 </WebRole>
 
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
 
 ### Bindings
   <WebRole name="CertificateTesting" vmsize="Small">
-...
     <Sites>
         <Site name="Web">
             <Bindings>
@@ -129,7 +124,6 @@ From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-co
             </Bindings>
         </Site>
     </Sites>
-...
 </WebRole>
 
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
