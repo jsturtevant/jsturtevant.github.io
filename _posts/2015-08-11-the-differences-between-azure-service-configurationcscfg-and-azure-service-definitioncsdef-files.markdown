@@ -14,14 +14,12 @@ I have complied some of the major configurations that each file contains.  Havin
 
 ### Certification thumbprints
 {% highlight xml %}
-  <Role name="Deployment">
-
+<Role name="Deployment">
     <Certificates>
         <Certificate name="SampleCertificate"
             thumbprint="9427befa18ec6865a9ebdc79d4c38de50e6316ff"
             thumbprintAlgorithm="sha1" />
     </Certificates>
-
 </Role>
 {% endhighlight %}  
 
@@ -29,43 +27,45 @@ From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-co
 
 ### Access Controls
 {% highlight xml %}
-  <ServiceConfiguration>
+<ServiceConfiguration>
   <NetworkConfiguration>
     <AccessControls>
       <AccessControl name="aclName1">
         <Rule order="<rule-order>" action="<rule-action>" remoteSubnet="<subnet-address>" description="rule-description"/>
       </AccessControl>
     </AccessControls>
+  </NetworkConfiguration>
+</ServiceConfiguration>
 {% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### Endpoint ACLS
 {% highlight xml %}
-   <EndpointAcls>
+<EndpointAcls>
       <EndpointAcl role="<role-name>" endpoint="<endpoint-name>" accessControl="<acl-name>"/>
-    </EndpointAcls>
+</EndpointAcls>
 {% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### DNS
 {% highlight xml %}
-    <Dns>
+<Dns>
       <DnsServers>
         <DnsServer name="<server-name>" IPAddress="<server-address>" />
       </DnsServers>
-    </Dns>
+</Dns>
 {% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### Virtual networks
 {% highlight xml %}
-     <VirtualNetworkSite name="<site-name>"/>
+<VirtualNetworkSite name="<site-name>"/>
 {% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### Subnets and Reserved IPS
 {% highlight xml %}
-  <AddressAssignments>
+<AddressAssignments>
       <InstanceAddress roleName="<role-name>">
         <Subnets>
           <Subnet name="<subnet-name>"/>
@@ -74,7 +74,7 @@ From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
       <ReservedIPs>
         <ReservedIP name="<reserved-ip-name>"/>
       </ReservedIPs>
-    </AddressAssignments>
+</AddressAssignments>
 {% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
@@ -83,28 +83,29 @@ From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### Startup tasks
 {% highlight xml %}
-  <WebRole name="WebRole1" vmsize="Small">
+<WebRole name="WebRole1" vmsize="Small">
     <Startup>
      <Task commandLine="install.cmd" executionContext="elevated" />
     </Startup>
+</WebRole>
 {% endhighlight %}  
 From <http://weblogs.asp.net/shijuvarghese/startup-tasks-for-windows-azure-roles>
 
 ### Environment variables
 {% highlight xml %}
-  <WebRole name="WebRole1">
+<WebRole name="WebRole1">
       <Runtime>
          <Environment>
             <Variable name="MyEnvironmentVariable" value="MyVariableValue" />
          </Environment>
       </Runtime>
-   </WebRole>
+</WebRole>
 {% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/gg432991.aspx>
 
 ### Certification storage:
 {% highlight xml %}
-  <WebRole name="CertificateTesting" vmsize="Small">
+<WebRole name="CertificateTesting" vmsize="Small">
     <Certificates>
         <Certificate name="SampleCertificate"
                      storeLocation="LocalMachine"
@@ -116,7 +117,7 @@ From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-co
 
 ### EndPoints
 {% highlight xml %}
-  <WebRole name="CertificateTesting" vmsize="Small">
+<WebRole name="CertificateTesting" vmsize="Small">
     <Endpoints>
         <InputEndpoint name="HttpsIn" protocol="https" port="443"
             certificate="SampleCertificate" />
@@ -127,7 +128,7 @@ From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-co
 
 ### Bindings
 {% highlight xml %}
-  <WebRole name="CertificateTesting" vmsize="Small">
+<WebRole name="CertificateTesting" vmsize="Small">
     <Sites>
         <Site name="Web">
             <Bindings>
