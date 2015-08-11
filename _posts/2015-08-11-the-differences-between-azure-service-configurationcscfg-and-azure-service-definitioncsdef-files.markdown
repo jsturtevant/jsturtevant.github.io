@@ -13,7 +13,7 @@ I have complied some of the major configurations that each file contains.  Havin
 ## <a name="cscfg"></a> Azure Service Configuration(.cscfg)
 
 ### Certification thumbprints
-
+{% highlight xml %}
   <Role name="Deployment">
 
     <Certificates>
@@ -23,10 +23,12 @@ I have complied some of the major configurations that each file contains.  Havin
     </Certificates>
 
 </Role>
+{% endhighlight %}  
 
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
 
 ### Access Controls
+{% highlight xml %}
   <ServiceConfiguration>
   <NetworkConfiguration>
     <AccessControls>
@@ -34,31 +36,35 @@ From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-co
         <Rule order="<rule-order>" action="<rule-action>" remoteSubnet="<subnet-address>" description="rule-description"/>
       </AccessControl>
     </AccessControls>
-
+{% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### Endpoint ACLS
+{% highlight xml %}
    <EndpointAcls>
       <EndpointAcl role="<role-name>" endpoint="<endpoint-name>" accessControl="<acl-name>"/>
     </EndpointAcls>
-
+{% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### DNS
+{% highlight xml %}
     <Dns>
       <DnsServers>
         <DnsServer name="<server-name>" IPAddress="<server-address>" />
       </DnsServers>
     </Dns>
-
+{% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### Virtual networks
+{% highlight xml %}
      <VirtualNetworkSite name="<site-name>"/>
-
+{% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 ### Subnets and Reserved IPS
+{% highlight xml %}
   <AddressAssignments>
       <InstanceAddress roleName="<role-name>">
         <Subnets>
@@ -69,21 +75,23 @@ From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
         <ReservedIP name="<reserved-ip-name>"/>
       </ReservedIPs>
     </AddressAssignments>
-
+{% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/jj156091.aspx>
 
 
 ##<a name="csdef"></a> Azure Azure Service Definition(.csdef)
 
 ### Startup tasks
+{% highlight xml %}
   <WebRole name="WebRole1" vmsize="Small">
     <Startup>
      <Task commandLine="install.cmd" executionContext="elevated" />
     </Startup>
-
+{% endhighlight %}  
 From <http://weblogs.asp.net/shijuvarghese/startup-tasks-for-windows-azure-roles>
 
 ### Environment variables
+{% highlight xml %}
   <WebRole name="WebRole1">
       <Runtime>
          <Environment>
@@ -91,10 +99,11 @@ From <http://weblogs.asp.net/shijuvarghese/startup-tasks-for-windows-azure-roles
          </Environment>
       </Runtime>
    </WebRole>
-
+{% endhighlight %}  
 From <https://msdn.microsoft.com/en-us/library/azure/gg432991.aspx>
 
 ### Certification storage:
+{% highlight xml %}
   <WebRole name="CertificateTesting" vmsize="Small">
     <Certificates>
         <Certificate name="SampleCertificate"
@@ -102,20 +111,22 @@ From <https://msdn.microsoft.com/en-us/library/azure/gg432991.aspx>
                      storeName="CA" />
     </Certificates>
 </WebRole>
-
+{% endhighlight %}  
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
 
 ### EndPoints
+{% highlight xml %}
   <WebRole name="CertificateTesting" vmsize="Small">
     <Endpoints>
         <InputEndpoint name="HttpsIn" protocol="https" port="443"
             certificate="SampleCertificate" />
     </Endpoints>
 </WebRole>
-
+{% endhighlight %}  
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
 
 ### Bindings
+{% highlight xml %}
   <WebRole name="CertificateTesting" vmsize="Small">
     <Sites>
         <Site name="Web">
@@ -125,5 +136,5 @@ From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-co
         </Site>
     </Sites>
 </WebRole>
-
+{% endhighlight %}  
 From <https://azure.microsoft.com/en-us/documentation/articles/cloud-services-configure-ssl-certificate/>
