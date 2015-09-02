@@ -18,8 +18,8 @@ There are alot of Visual Studio extensions out there and it has always surprised
 
 - [Visual Studio Spell Checker](https://visualstudiogallery.msdn.microsoft.com/a23de100-31a1-405c-b4b7-d6be40c3dfff?SRC=Featured) - Spelling is not my strong suite so why not let the spell checker do all the hard work.
 
-## Bonus
-So I have to give me self a little plug here and draw attention to my extension called [AceJump for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/2d045428-ec7e-4a77-802c-5365f9ddafa2). It is one I use all the time and it has great reviews, so that counts for something.  If your a keyboard fanatic then this is a great tool otherwise you will probably never use.  If you install it and use it, let me know what you think by leaving a commenter below.  
+### Bonus
+So I have to give me self a little plug here and draw attention to my extension called [AceJump for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/2d045428-ec7e-4a77-802c-5365f9ddafa2). It is one I use all the time and it has great reviews, so that might count for something.  If your a keyboard fanatic then this is a great tool otherwise you will probably never use.  If you install it and use it, let me know what you think by leaving a commenter below.  
 
 ## Conclusion
 There are a lot of extensions out there but those are just a few of my favorites that have changed the way I interact with Visual Studio.  If you have any you think I am missing be sure to let me know below.
