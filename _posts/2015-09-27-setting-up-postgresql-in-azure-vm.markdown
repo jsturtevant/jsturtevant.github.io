@@ -15,7 +15,7 @@ Assuming you have set up you Azure account ([Ways to get Azure](http://devfish.n
 In the bottom drawer bar click on new:
 ![azure new resource]({{ site.url }}/assets/azure-new-resource.png)
 
-Next Select a new Compute Resource -> Virtual Machine -> Quick Create.  Give the VM a unique name and be sure to pick your favorite Linux distro.  In this case I will be walking through how to set up a Ubuntu Server.  You will also need to provide a password, region to host the VM (select the location closest to you) and your Azure subscription. Click the Create button in the bottom right and a few minutes you will have a VM!
+Next select a new Compute Resource -> Virtual Machine -> Quick Create.  Give the VM a unique name and be sure to pick your favorite Linux distro.  In this case I will be walking through how to set up a Ubuntu Server.  You will also need to provide a password, region to host the VM (select the location closest to you) and your Azure subscription. Click the Create button in the bottom right and a few minutes you will have a VM!
 
 ![new linux vm]({{ site.url }}/assets/azure-linux-vm-new.png)
 
@@ -25,7 +25,7 @@ To install PostgreSQL you will need to ssh (secure shell) into the VM you just s
 
 ![linux vm ready]({{ site.url }}/assets/azure-vm-ready.png)
 
-Nex you can ssh into the machine.  If you are on windows you are can use [PuTTY](http://www.putty.org/).  There is a tutorial located [here](http://www.webmasters-central.com/tutorials/how-to-telnet-server-using-putty-ssh-client/).  When you are logging into the VM you will provide the username and password that you created when provisioning the VM in the previous step.
+Now you can ssh into the machine.  If you are on windows you are can use [PuTTY](http://www.putty.org/).  There is a tutorial located [here](http://www.webmasters-central.com/tutorials/how-to-telnet-server-using-putty-ssh-client/).  When you are logging into the VM you will provide the username and password that you created when provisioning the VM in the previous step.
 
 Once you are connected to the machine we will use apt-get to install PostgreSQL.  At the terminal type:
 
@@ -61,6 +61,7 @@ sudo vi /etc/postgresql/9.3/main/postgresql.conf
 listen_addresses = '*'
 ```
 Restart the PostgreSQL server:
+
 ```
 sudo service postgresql restart
 ```
