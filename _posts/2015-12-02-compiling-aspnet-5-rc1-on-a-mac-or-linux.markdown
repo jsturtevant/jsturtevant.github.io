@@ -46,11 +46,10 @@ The fix is also fairly straight forward.  The ```project.json``` has references 
   },
 {% endhighlight %}  
 
-As you can see, the default Yeoman Generator Template has ```dnx451``` and ```dnxcore50``` frameworks listed.  The ```DNX451``` framework is the full .NET Framework that is not available on Mac's or Linux.  ```dnxcore50``` is a subset of the full framework that has been [open source and developed to be cross platform](https://github.com/dotnet/corefx).  The fix is as simple as removing the reference for ```dnx451``` in the ```project.json``` file  so that only the reference to ```dnxcore50``` is left:
+As you can see, the default Yeoman Generator Template has ```dnx451``` and ```dnxcore50``` frameworks listed.  The ```DNX451```  reference is for the full .NET Framework which is not available on Mac or Linux.  The ```dnxcore50``` reference is a subset of the full .NET Framework that has been [open source and developed to be cross platform](https://github.com/dotnet/corefx).  The fix is as simple as removing the reference for ```dnx451``` in the ```project.json``` file  so that only the reference to ```dnxcore50``` is left:
 
 {% highlight json %}
  "frameworks": {
-    "dnx451": { },
     "dnxcore50": { }
   },
 {% endhighlight %}  
