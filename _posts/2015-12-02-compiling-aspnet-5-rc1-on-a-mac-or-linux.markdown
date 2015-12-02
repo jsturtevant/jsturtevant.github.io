@@ -35,7 +35,7 @@ Building bosccdotnet for DNX,Version=v4.5.1
 {% endhighlight %}  
 
 ## The Fix
-The issue is obvious from the first line in the error message if you are aware of how ASP.NET 5 is architected but for the uninitiated this could be confusing. The issue is that you are building for the full .NET framework which is not available on Mac or Linux.  The issue is well known and is documented in the [Release Notes for RC1](https://github.com/aspnet/home/releases/v1.0.0-rc1-final).  Note that you can still work on the project on a mac even with the errors as you are building for both versions of the .NET Framework.
+The issue is obvious from the first line in the error message if you are aware of how ASP.NET 5 is architected but for the uninitiated this could be confusing. The issue is that you are building for the full .NET framework which is not available on Mac or Linux.  The issue is well known and is documented in the [Release Notes for RC1](https://github.com/aspnet/home/releases/v1.0.0-rc1-final).  Note that you can still work on the project on a Mac even with the errors as you are building for both versions of the .NET Framework.
 
 The fix is also fairly straight forward.  The ```project.json``` has references for the .NET Frameworks that ASP.NET 5 can be compiled for:
 
