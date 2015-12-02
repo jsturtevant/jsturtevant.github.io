@@ -34,9 +34,9 @@ Building bosccdotnet for DNX,Version=v4.5.1
     //removed for brevity
 {% endhighlight %}  
 
-The issue is obvious from the first line in the error message if you are aware of how ASP.NET 5 is architected but for the uninitiated this could be confusing.  The issue is well known and is documented in the [Release Notes for RC1](https://github.com/aspnet/home/releases/v1.0.0-rc1-final).  
-
 ## The Fix
+The issue is obvious from the first line in the error message if you are aware of how ASP.NET 5 is architected but for the uninitiated this could be confusing. The issue is that you are building for the full .NET framework which is not available on Mac or Linux.  The issue is well known and is documented in the [Release Notes for RC1](https://github.com/aspnet/home/releases/v1.0.0-rc1-final).  Note that you can still work on the project on a mac even with the errors as you are building for both versions of the .NET Framework.
+
 The fix is also fairly straight forward.  The ```project.json``` has references for the .NET Frameworks that ASP.NET 5 can be compiled for:
 
 {% highlight json %}
@@ -54,4 +54,4 @@ As you can see, the default Yeoman Generator Template has ```dnx451``` and ```dn
   },
 {% endhighlight %}  
 
-I hope this helps someone if they run into the same build errors.  Being able to compile and run on Mac and Linux is awesome.  I can't wait to see where the platform goes from here!
+Now you should be able to run ```dnu build`` again and have a successful build.  I hope this helps someone if they run into the same build errors.  Being able to compile and run on Mac and Linux is awesome.  I can't wait to see where the platform goes from here!
