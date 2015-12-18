@@ -6,6 +6,8 @@ categories:
   - asp.net
   - csharp
 ---
+<p class="message">Update (12/18/2015):  It is possible to compile ASP.NET 5 for the full .NET Framework on a Mac or Linux machine using [Mono](http://www.mono-project.com/).  More information can be found under the [instructions for installing DNX for Mono on Mac](https://docs.asp.net/en/latest/getting-started/installing-on-mac.html). </a>
+</p>
 
 It is very exciting times as the [Release Candidate for ASP.NET 5](https://get.asp.net/) was released a couple weeks ago.  Of course, I just had to [try it out on my Mac](https://docs.asp.net/en/latest/tutorials/your-first-mac-aspnet.html) and it works!  Simply awesome!  I think this really opens up the doors for a lot of developers to try out ASP.NET and C#.
 
@@ -35,7 +37,7 @@ Building bosccdotnet for DNX,Version=v4.5.1
 {% endhighlight %}  
 
 ## The Fix
-The issue is obvious from the first line in the error message if you are aware of how ASP.NET 5 is architected but for the uninitiated this could be confusing. The issue is that you are building for the full .NET framework which is not available on Mac or Linux.  The issue is well known and is documented in the [Release Notes for RC1](https://github.com/aspnet/home/releases/v1.0.0-rc1-final).  Note that you can still work on the project on a Mac even with the errors as you are building for both versions of the .NET Framework.
+The issue is obvious from the first line in the error message if you are aware of how ASP.NET 5 is architected but for the uninitiated this could be confusing. The issue is that you are building for the full .NET framework which is not available on Mac or Linux when using .NET Core based DNX (you can switch your .NET Execution Environment (DNX) using the .NET Version Manager (DNVM) and use [Mono](http://www.mono-project.com/)).  The issue is well known and is documented in the [Release Notes for RC1](https://github.com/aspnet/home/releases/v1.0.0-rc1-final).  Note that you can still work on the project on a Mac even with the errors as you are building for both versions of the .NET Framework.
 
 The fix is also fairly straight forward.  The ```project.json``` has references for the .NET Frameworks that ASP.NET 5 can be compiled for:
 
