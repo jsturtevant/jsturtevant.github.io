@@ -87,3 +87,20 @@ footer {
 #archives .posts ul{
   list-style: none;
 }
+
+.post-date {
+  /*override poole.css*/
+  display: inline;
+}
+
+.metadata {
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+}
+
+.metadata a.category{
+  background-color: #bf616a;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 5px
+}
