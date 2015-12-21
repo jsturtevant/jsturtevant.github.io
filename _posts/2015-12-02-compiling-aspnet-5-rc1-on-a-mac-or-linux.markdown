@@ -6,7 +6,7 @@ categories:
   - asp.net
   - csharp
 ---
-<p class="message">Update (12/18/2015):  It is possible to compile ASP.NET 5 for the full .NET Framework on a Mac or Linux machine using <a href="http://www.mono-project.com/">Mono</a>.  More information can be found under the <a href="https://docs.asp.net/en/latest/getting-started/installing-on-mac.html">instructions for installing DNX for Mono on Mac. </a>
+<p class="message">Update (12/18/2015):  It is possible to compile ASP.NET 5 for the full .NET Framework on a Mac or Linux machine using <a href="http://www.mono-project.com/">Mono</a>.  More information can be found under the <a href="https://docs.asp.net/en/latest/getting-started/installing-on-mac.html">instructions for installing DNX for Mono on Mac. </a>  I didn't have Mono installed when I set up ASP.NET 5 and so ran into the errors below.
 </p>
 
 It is very exciting times as the [Release Candidate for ASP.NET 5](https://get.asp.net/) was released a couple weeks ago.  Of course, I just had to [try it out on my Mac](https://docs.asp.net/en/latest/tutorials/your-first-mac-aspnet.html) and it works!  Simply awesome!  I think this really opens up the doors for a lot of developers to try out ASP.NET and C#.
