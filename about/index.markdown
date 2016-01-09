@@ -23,5 +23,9 @@ I believe that you learn best through teaching and sharing.  With [Floyd Hilton]
 ### Projects
 I am always working on a project.  Here are a few that you can check out:
 
-- [AceJump](https://visualstudiogallery.msdn.microsoft.com/2d045428-ec7e-4a77-802c-5365f9ddafa2)
+- [Visual Studio Extension: AceJump](https://visualstudiogallery.msdn.microsoft.com/2d045428-ec7e-4a77-802c-5365f9ddafa2)
 - [Return Value Not Used Analyzer](https://github.com/jsturtevant/ReturnValueNotUsedAnalyzer)
+- [VS Code Extension: Softwrap](https://marketplace.visualstudio.com/items/jsturtevant.softwrap)
+
+### Videos
+You can find a list of my current videos [here](</videos/).
