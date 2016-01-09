@@ -33,7 +33,7 @@ Finally this post was about how you actually view, edit, add, and remove files f
 ### View Current Files
 View current files in your application by Clicking on `Debug Console` -> `CMD`:
 
-![kudo view files]({{ site.url }}/assets/zure-kudo-service-view-files.png)
+![kudo view files]({{ site.url }}/assets/azure-kudo-service-view-files.png)
 
 Once you are viewing the folder structure you can get to your application home directory by clicking the `site` folder:
 
