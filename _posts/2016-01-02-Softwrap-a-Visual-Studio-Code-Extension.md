@@ -46,9 +46,9 @@ That is it!  [Softwrap](https://marketplace.visualstudio.com/items/jsturtevant.s
 Overall I was really impressed with [VS Code's Extension system and documentation](https://code.visualstudio.com/docs/extensions/overview).  It was only announced about a month ago and yet it is fairly robust and detailed documentation.  
 
 ### Reading and Writing the User Settings File
-The limitation I ran into when trying to write to the User Settings file was that there is no API for it.  Again, I got a quick response on twitter that this was something that is under consideration but not yet implemented.  The suggestion was to directly modify the file itself as a work around.
+The limitation I ran into when trying to write to the User Settings file was that there is no VS Code API for it [(see github issue)](https://github.com/Microsoft/vscode/issues/1396).  Again, I got a [quick response on twitter](https://twitter.com/ErichGamma/status/678667459621031936) that this was something that is under consideration but not yet implemented.  The suggestion was to directly modify the file itself as a work around.
 
-This was fairly simple to do because VS Code is sitting on top of Electron and we can leverage all the power and infrastructure of Node.js and the strong ecosystem that comes with it.  It was easy enough to use the File System module to read/write the User Settings file.
+This was fairly simple to do because VS Code is sitting on top of [Electron](http://electron.atom.io/) and we can leverage all the power and infrastructure of Node.js and the strong ecosystem that comes with it.  It was easy enough to use the [File System module](https://nodejs.org/api/fs.html) to read/write the User Settings file.
 
 ### Finding the Settings Files cross-platform
 It was not easy to find the location of all the settings files accross each platform.  I finally found the [documentation here](https://code.visualstudio.com/docs/customization/userandworkspace#_settings-file-locations) and these two posts on how to work with Node.js cross-platform:
