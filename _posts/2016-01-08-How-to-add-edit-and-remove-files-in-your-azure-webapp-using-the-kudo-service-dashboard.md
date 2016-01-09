@@ -7,7 +7,7 @@ categories:
   - webapps
 ---
 
-While debugging your Azure Web App deployments it is sometimes useful to view the files that are deployed to the service.  Several situations come to mind.  For example, trying to debug your database connection strings or possibly determining which files actually got deployed and where they sit in the file system.  Or maybe you need to check if all your dependencies have been installed.   Maybe a [firewall blocks your FTP access](https://wiki.filezilla-project.org/Network_Configuration).
+While debugging your Azure Web App deployments it is sometimes useful to view the files that are deployed to the service.  Several situations come to mind.  For example, trying to debug your database connection strings or possibly determining [which files actually got deployed and where they sit in the file system](http://stackoverflow.com/questions/24497774/configure-python-3-4-and-django-on-windows-azure).  Or maybe you need to check if all your dependencies have been installed.   Maybe a [firewall blocks your FTP access](https://wiki.filezilla-project.org/Network_Configuration).
 
 But how do you do view the files if you are using a [Platform as a Service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service) solution such as [Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/)? PaaS doesn't [set up a virtual machine](setting-up-postgresql-in-azure-vm/) that you can remote into in the traditional sense and instead abstracts all that complexity away for you.  Enter the [Kudo](https://github.com/projectkudu/kudu/wiki) Service Dashboard.
 
