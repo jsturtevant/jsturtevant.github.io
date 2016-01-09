@@ -2,6 +2,8 @@
 layout: post
 title: "Setting up PostgreSQL in Azure VM"
 date: "2015-09-27"
+categories:
+  - azure
 ---
 
 There are a few different ways to spin up an [PostgreSQL](http://www.postgresql.org/) database in [Microsoft Azure](https://azure.microsoft.com/en-us/).  One of the easiest ways is via the [MS Open Tech VM Depot](https://vmdepot.msopentech.com/List/Index).  The VM Depot is a collection of preconfigured VM's that you can deploy to azure and is great if you want to install a complete stack such as [LAMP](https://vmdepot.msopentech.com/List/Index?sort=Featured&search=LAMP) or [LAPP](https://vmdepot.msopentech.com/List/Index?sort=Featured&search=LAPP).  If you choose this option then you can skip down below to [configuring PostgreSQL](#configure).
