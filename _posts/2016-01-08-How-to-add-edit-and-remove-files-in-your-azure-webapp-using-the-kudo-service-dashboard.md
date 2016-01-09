@@ -19,9 +19,11 @@ But how do you do view the files if you are using a [Platform as a Service (PaaS
  How do you start using it?
 
 ## How to view Kudo service dashboard
-There are [two ways to access Kudo](https://github.com/projectkudu/kudu/wiki/Accessing-the-kudu-service).  The first is to simply modify your website URL and by adding `scm` to it. If you site is `http://mysite.azurewebsites.net/`, then the root URL of the Kudu service is `https://mysite.scm.azurewebsites.net/`. Note the added `scm` token.
+There are [two ways to access Kudo](https://github.com/projectkudu/kudu/wiki/Accessing-the-kudu-service):
 
-The second way is by using the Azure Portal.  First Navigate to your Web App, Select `Tools` -> `Kudo` -> `Go`:
+1. Simply modify your website URL and by adding `scm` to it. If you site is `http://mysite.azurewebsites.net/`, then the root URL of the Kudu service is `https://mysite.scm.azurewebsites.net/`. Note the added `scm` token.
+
+2. Using the Azure Portal.  First Navigate to your Web App, Select `Tools` -> `Kudo` -> `Go`:
 
 ![launch kudo from azure portal]({{ site.url }}/assets/Azure-Kudo-Service-how-to.png)
 
