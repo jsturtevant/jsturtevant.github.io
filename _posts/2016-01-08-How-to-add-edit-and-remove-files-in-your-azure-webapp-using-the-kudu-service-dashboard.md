@@ -25,44 +25,44 @@ There are [two ways to access Kudu](https://github.com/projectkudu/kudu/wiki/Acc
 
 2. Using the Azure Portal.  First Navigate to your Web App, Select `Tools` -> `Kudu` -> `Go`:
 
-![launch Kudu from azure portal]({{ site.url }}/assets/Azure-Kudu-Service-how-to.png)
+![launch Kudu from azure portal]({{ site.url }}/assets/Azure-kudu-Service-how-to.png)
 
 ## How to View, Add, Edit, and Remove files in Azure Web App using Kudu
 Finally this post was about how you actually view, edit, add, and remove files from the Web App.  Once you have your Kudu service Dashboard open you will see some basic information and links for more complex tasks:
 
-![Kudu home page]({{ site.url }}/assets/Azure-Kudu-Service-home.png)
+![Kudu home page]({{ site.url }}/assets/Azure-kudu-Service-home.png)
 
 ### View Current Files
 View current files in your application by Clicking on `Debug Console` -> `CMD`:
 
-![Kudu view files]({{ site.url }}/assets/azure-Kudu-service-view-files.png)
+![Kudu view files]({{ site.url }}/assets/azure-kudu-service-view-files.png)
 
 Once you are viewing the folder structure you can get to your application home directory by clicking the `site` folder:
 
-![Kudu site folder]({{ site.url }}/assets/azure-Kudu-service-site-folder.png)
+![Kudu site folder]({{ site.url }}/assets/azure-kudu-service-site-folder.png)
 
 And then the double clicking `wwwroot` folder:
 
-![Kudu site folder]({{ site.url }}/assets/azure-Kudu-service-wwwroot-folder.png)
+![Kudu site folder]({{ site.url }}/assets/azure-kudu-service-wwwroot-folder.png)
 
 This is where all your files live.  You can even [customize this location](https://github.com/projectkudu/kudu/wiki/Customizing-deployments).  In this case, only the default starter HTML page is available but in the case of a larger application there would be many files.
 
-![Kudu your files live here]({{ site.url }}/assets/azure-Kudu-service-files-live-here.png)
+![Kudu your files live here]({{ site.url }}/assets/azure-kudu-service-files-live-here.png)
 
 ### Edit Files
 To edit a file click the `pencil` icon:
 
-![launch Kudu from azure portal]({{ site.url }}/assets/azure-Kudu-service-files-edit.png)
+![launch Kudu from azure portal]({{ site.url }}/assets/azure-kudu-service-files-edit.png)
 
 ### Add Files
 To add a file you can drag it from your file system to the folder.  It is important to drag it directly onto the folder viewer.
 
-![launch Kudu from azure portal]({{ site.url }}/assets/azure-Kudu-service-files-add.png)
+![launch Kudu from azure portal]({{ site.url }}/assets/azure-kudu-service-files-add.png)
 
 ### Remove Files
 Toe remove a file click the `minus` icon:
 
-![launch Kudu from azure portal]({{ site.url }}/assets/azure-Kudu-service-files-remove.png)
+![launch Kudu from azure portal]({{ site.url }}/assets/azure-kudu-service-files-remove.png)
 
 ## Conclusion
 It is really simple to use the [Kudu](https://github.com/projectkudu/kudu/wiki) Service to view, edit, add, and remove files from your Web App.  But as you can see there are a lot of capabilities that [Kudu](https://github.com/projectkudu/kudu/wiki) brings to Azure Web apps. Another really useful ability that Kudu gives you is the ability to [view log files](https://github.com/projectkudu/kudu/wiki/Diagnostic-Log-Stream).  
