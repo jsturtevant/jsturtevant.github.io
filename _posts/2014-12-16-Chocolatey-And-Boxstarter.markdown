@@ -3,7 +3,7 @@ layout: post
 title:  "Chocolatey and Boxstarter"
 date:   2014-12-16
 categories:
-  - fun
+  - chocolatey
   - windows
 ---
 
