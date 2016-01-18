@@ -7,7 +7,7 @@ categories:
   - chocolatey
 ---
 
-Installing [Elixir](http://elixir-lang.org/) is very easy using [Chocolatey](https://chocolatey.org/) for Windows.  If you haven't heard of Chocolately before, it is the missing package manager for Windows (similar to [apt-get](https://en.wikipedia.org/wiki/Advanced_Packaging_Tool) or [homebrew](http://brew.sh/)).  When combined with [Boxstarter](http://www.boxstarter.org/), it can be used to [automatically set up your development environment](/posts/Chocolatey-And-Boxstarter/).
+I got hooked on [Elixir](http://elixir-lang.org/) after reading [Programming Elixir by Dave Thomas](https://pragprog.com/book/elixir/programming-elixir) so I had to figure out how to install it on Windows.  Turns out that installing [Elixir](http://elixir-lang.org/) on Windows is very easy using [Chocolatey](https://chocolatey.org/).  If you haven't heard of Chocolately before, it is the missing package manager for Windows (similar to [apt-get](https://en.wikipedia.org/wiki/Advanced_Packaging_Tool) or [homebrew](http://brew.sh/)).  When combined with [Boxstarter](http://www.boxstarter.org/), it can be used to [automatically set up your development environment](/posts/Chocolatey-And-Boxstarter/).
 
 ## Installing Elixir
 To install Elixir using Chocolaty:
