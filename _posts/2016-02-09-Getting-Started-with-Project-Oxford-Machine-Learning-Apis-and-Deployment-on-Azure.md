@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Getting Started with Project Oxford Machine Learning API's and Deployment on Azure'
+title: 'Getting Started with Project Oxford Machine Learning APIs and Deployment on Azure'
 date: '2016-02-09'
 categories:
   - Project Oxford
