@@ -7,9 +7,10 @@ categories:
   - Azure 
 ---
 
-[Project Oxford](https://www.projectoxford.ai/) is cool.  I am out at a lot of hackathons where I see students creating some amazing applications.  While at the hackathons I see students struggling to get started with Project Oxford in their language of choice.  Project Oxford is so powerful that I hate to see students struggle getting started so I created a [series of videos](https://channel9.msdn.com/Search?term=project%20oxford%20sturtevant#lang-en=en&ch9Search) and [sample projects](https://github.com/jsturtevant/happy-image-tester-django) to get them started quickly.  But Project Oxford is not only for hackathons and students.  Project Oxford has tons of real world applications such as [image and video processing, OCR](https://www.projectoxford.ai/vision), and [text to speech](https://www.projectoxford.ai/speech).
+[Project Oxford](https://www.projectoxford.ai/) is cool.  I am out at a lot of hackathons where I see students creating some amazing applications.  While at the hackathons I see students struggling to get started with Project Oxford in their language of choice.  Project Oxford is so powerful that I hate to see students struggle getting started so I created a [series of videos](https://channel9.msdn.com/Search?term=project%20oxford%20sturtevant#lang-en=en&ch9Search) and [sample projects](https://github.com/jsturtevant/happy-image-tester-django) to get them started quickly.  But Project Oxford is not only for hackathons and students.  Project Oxford has tons of real world applications such as [image and video processing, OCR](https://www.projectoxford.ai/vision), and [text to speech](https://www.projectoxford.ai/speech).  
 
-Watch the videos to learn more:
+By the end of the videos you will have a full working sample and learn a few tricks like [using Kudu Dashboard](/posts/How-to-add-edit-and-remove-files-in-your-azure-webapp-using-the-kudu-service-dashboard) along the way.
+
 1. [Introduction to Project Oxford Machine Learning API's](https://channel9.msdn.com/Blogs/jsturtevant/Introduction-to-Project-Oxford-Machine-Learning-APIs)
 2. [How to set up  your local Python environment for development and testing](https://channel9.msdn.com/Blogs/jsturtevant/Setting-up-Project-Oxford-for-Python-on-Windows)
 3. [Configuring GitHub Continuous Deployment on Azure with Project Oxford Application](https://channel9.msdn.com/Blogs/jsturtevant/Configuring-GitHub-Continuous-Deployment-on-Azure-with-Project-Oxford-Application)
@@ -20,6 +21,7 @@ The sample project that used in the series is located at [https://github.com/jst
 
 ### Project Oxford API's
 You can find API wrappers for many of the languages:
+
 - [Official API's for c# and more](https://github.com/Microsoft/ProjectOxford-ClientSDK)
 - [Python API](https://github.com/southwood/project-oxford-python)
 - [Node.js API](https://github.com/felixrieseberg/project-oxford)
