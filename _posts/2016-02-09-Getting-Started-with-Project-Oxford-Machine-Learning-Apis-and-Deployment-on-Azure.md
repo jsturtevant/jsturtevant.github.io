@@ -16,7 +16,7 @@ Watch the videos to learn more:
 
 
 ### Sample projects
-The sample project that used in the series is located at https://github.com/jsturtevant/happy-image-tester-django. If you prefer Node.js I have a made a similar project located at https://github.com/jsturtevant/happy-image-tester-nodejs.
+The sample project that used in the series is located at [https://github.com/jsturtevant/happy-image-tester-django](https://github.com/jsturtevant/happy-image-tester-django). If you prefer Node.js I have a made a similar project located at [https://github.com/jsturtevant/happy-image-tester-nodejs](https://github.com/jsturtevant/happy-image-tester-nodejs).
 
 ### Project Oxford API's
 You can find API wrappers for many of the languages:
