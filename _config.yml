@@ -2,7 +2,7 @@
 markdown:         redcarpet
 
 # Permalinks
-permalink:        posts/:title
+permalink:        posts/:title/
 
 # Setup
 title:            James Sturtevant
