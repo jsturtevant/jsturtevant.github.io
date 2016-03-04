@@ -28,4 +28,4 @@ I am always working on a project.  Here are a few that you can check out:
 - [VS Code Extension: Softwrap](https://marketplace.visualstudio.com/items/jsturtevant.softwrap)
 
 ### Videos
-You can find a list of my current videos [here](</videos/).
+You can find a list of my current videos [here](/videos/).
