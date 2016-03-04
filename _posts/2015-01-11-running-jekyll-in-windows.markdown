@@ -6,6 +6,9 @@ categories:
   - jekyll
 ---
 
+<p class="message">I have an updated post <a href="/posts/Running-Jekyll-in-Windows-using-Docker">using Docker to run Jekyll in Windows</a>.  The method described below is still valid but you know have more choices.
+</p>
+
 Setting up [Jekyll](http://jekyllrb.com/) for Windows is painful.  To set it up you need to follow a multiple step setup process and cross your fingers.  [Julian Thilo](https://twitter.com/juthilo) has done a great job outlining all the steps and pitfalls on his [Run Jekyll on Windows](http://jekyll-windows.juthilo.com/) site.  This is how I initially setup Jekyll but the trouble with this process is it takes several steps and potentially requires a bit of debugging to figure out.
 
 I recently switch development machines, which  meant I needed to setup Jekyll again and didn't want to repeat the error prone process.  At the same time I happened to learn [how use Vagrant](http://sciencevikinglabs.com/science/vagrant/2014/12/21/vagrant-getting-started.html) at the [user group](http://augusta-polyglot.github.io/) I organize.  
