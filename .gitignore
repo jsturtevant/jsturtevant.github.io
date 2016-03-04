@@ -32,3 +32,5 @@ com_crashlytics_export_strings.xml
 assets/Thumbs.db
 public/Thumbs.db
 Thumbs.db
+
+Gemfile.lock

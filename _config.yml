@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 
 # Permalinks
 permalink:        posts/:title/
@@ -16,3 +16,4 @@ github_username:  jsturtevant
 rss_feed:         feed.xml
 paginate:         5
 disqus_shortname: aspenrootsdevelopment
+gems:             [jekyll-paginate]

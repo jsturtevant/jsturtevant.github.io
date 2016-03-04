@@ -19,7 +19,3 @@ Other tools
 Great thanks to the following projects:
 
 - Installing [jekyll on windows](http://jekyll-windows.juthilo.com/)
-Html Proofer
-- Check generated Html files [Html::Proofer](https://github.com/gjtorikian/html-proofer)
-	- ```bundle install```
-	- ```rake test```
