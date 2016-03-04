@@ -25,6 +25,7 @@ Combining the two ideas I created a [Vagrant Configuration for Jekyll](https://g
 
 ## Existing Jekyll Projects
 1. Copy the projects folder to the folder that contains the ```vagrantfile```.  
+2. Login to the VM using ```vagrant ssh```
 
 ## New Jekyll Projects
 1.  Open a command prompt to location of the ```vagrantfile``` and run ```vagrant ssh```
