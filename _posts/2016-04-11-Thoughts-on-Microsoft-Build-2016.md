@@ -10,7 +10,7 @@ categories:
 
 For the last few years there has been a major shift at Microsoft, one that has culminated in news from [Build 2016](http://build.microsoft.com/) that I don't think anyone saw coming...
 
-<iframe src="https://channel9.msdn.com/Blogs/jsturtevant/Thoughts-on-Microsoft-Build-2016" width="850" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Blogs/jsturtevant/Thoughts-on-Microsoft-Build-2016/player" width="850" height="540" allowFullScreen frameBorder="0"></iframe>
 
 ## Bash on Windows
 The most exciting announcement for me to come out of Microsoft Build is that [Bash Shell is coming to Windows 10](http://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)!  
