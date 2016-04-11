@@ -8,7 +8,7 @@ categories:
   - service fabric
 ---
 
-For the last few years, there has been a major shift at Microsoft, one that has culminated in news from [Build 2016](http://build.microsoft.com/) that I don't think anyone saw coming...
+For the last few years there has been a major shift at Microsoft, one that has culminated in news from [Build 2016](http://build.microsoft.com/) that I don't think anyone saw coming...
 
 <iframe src="https://channel9.msdn.com/Blogs/jsturtevant/Thoughts-on-Microsoft-Build-2016" width="850" height="540" allowFullScreen frameBorder="0"></iframe>
 
