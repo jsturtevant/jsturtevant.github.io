@@ -15,7 +15,7 @@ For the last few years there has been a major shift at Microsoft, one that has c
 ## Bash on Windows
 The most exciting announcement for me to come out of Microsoft Build is that [Bash Shell is coming to Windows 10](http://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx)!  
 
-If your just learning about this, stop everything and go [learn how to install Bash on Ubuntu on Windows](https://blogs.msdn.microsoft.com/commandline/2016/04/06/bash-on-ubuntu-on-windows-download-now-3/) right now.  Seriously this post will be there for you to read while you upgrade.
+If you are just learning about this, stop everything and go [learn how to install Bash on Ubuntu on Windows](https://blogs.msdn.microsoft.com/commandline/2016/04/06/bash-on-ubuntu-on-windows-download-now-3/) right now.  Seriously this post will be there for you to read while you upgrade.
 
 Bash on Ubuntu on Windows is a game changer in a couple different ways. First when a developer is working on the Windows platform wants to get stated with any given technology they no longer have to worry if it [is fully supported on Windows](https://twitter.com/avdi/status/713773013347512320). No longer will the developer have to [spend hours searching to the ends of the internet to figure out how to get it working for Windows](https://github.com/railsinstaller/railsinstaller-windows/issues/70).  This is great not only for Windows developers but is great for the languages and tools themselves because now they will now have an easier on boarding and learning process for a new audience.   On a deeper level this really means that there will be more collaboration and cross-pollination of ideas across the two eco systems.       
 
