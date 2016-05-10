@@ -10,8 +10,8 @@ The model for [Service Fabric](https://azure.microsoft.com/en-us/documentation/a
 
 There are two main types of services you can build with Service Fabric:
 
-- **[Stateless Services](#Stateless-Services)** - no state is maintained in the service.  Longer term state is stored in an external database.  This is your typical application/data layer approach to building services that you are already likely familiar with.
-- **[Stateful Services](#Stateful-Services)** - state is stored with the service.  Allows for state to be persisted with out the need for an external database.  Data is co-located with the code that is running the service.
+- **[Stateless Services](#stateless-services)** - no state is maintained in the service.  Longer term state is stored in an external database.  This is your typical application/data layer approach to building services that you are already likely familiar with.
+- **[Stateful Services](#stateful-services)** - state is stored with the service.  Allows for state to be persisted with out the need for an external database.  Data is co-located with the code that is running the service.
 
 One of the real advantage of using a platform like Service Fabric is when you begin to leverage the power of Stateful services.  But Stateful services takes a bit of a mind shift in the way we think about building applications so let's look at stateless applications first then move onto the stateful service approach. 
 
