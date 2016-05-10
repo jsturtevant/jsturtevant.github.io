@@ -9,12 +9,14 @@ categories:
 The model for [Service Fabric](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-overview/) allows for flexibility when it comes to designing the individual services, giving you the ability to pick the right programming model for each service.  Deciphering the multiple options can be complex and really depends on each scenario and service you are building.  Here I will try to break down the options.  Every application has many services and each service will likely have a different programming model so remember to assess each service individually.
 
 There are two main types of services you can build with Service Fabric:
+
 - **[Stateless Services](#Stateless-services)** - no state is maintained in the service.  Longer term state is stored in an external database.  This is your typical application/data layer approach to building services that you are already likely familiar with.
 - **[Stateful Services](#Stateful-services)** - state is stored with the service.  Allows for state to be persisted with out the need for an external database.  Data is co-located with the code that is running the service.
 
 One of the real advantage of using a platform like Service Fabric is when you begin to leverage the power of Stateful services.  But Stateful services takes a bit of a mind shift in the way we think about building applications so let's look at stateless applications first then move onto the stateful service approach. 
 
 Once you have decided whether you are building a Stateful or Stateless service you can then choose from [multiple types of programming models](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-choose-framework/) to help you build you services:
+
 - **Guest** - allows you to run any executable inside Service Fabric runtime.  This can be an executable or a container
 - **Reliable Services** - light weight framework that lets you integrate with the Service Fabric runtime (can be stateful or stateless)
 - **Reliable Actor** - framework that lets you build your applications using the Actor pattern (can be stateful or stateless)
@@ -29,6 +31,7 @@ It is important to note that the above diagram only uses stateless services.  In
 
 ### Stateless Application Use Cases
 Typical use cases for a Stateless Application are:
+
 - web interface for end users
 - API gateway to other services
 - proxies
@@ -53,12 +56,15 @@ Another reason the Stateful approach to services is powerful is because now you 
 
 ### Use Cases
 Typical use cases for a Stateful application are:
+
 - any data service (such as order service or inventory service)
 - gaming scenarios
 - most services where data is stored externally and pulled into do processing (you would model it so the data is local)
 - data analytics and workflows
 
 ### Stateful Service Fabric Programming Models
+The Service Fabric Programming model that you might use depends on the specific use case.  A few guiding tips:
+
 - **Stateful Reliable Services** - allows the most flexibility around the managing state.  It allows you create transactions around multiple data types or create complex processing units of work.  Most Stateful services can be created using this programming model and is a great place to start if you are sure your domain doesn't fit the Actor Model.
 - **Stateful Actor Model** - This model is useful anytime the [Actor pattern](https://en.wikipedia.org/wiki/Actor_model) can be used to describe  your domain space.  This sounds obvious but is only useful if you know where you might use the Actor model to model your domain space.  A few scenario's would be where you are doing a high number of small, independent calculations or have many concurrent interactions that need supervision.  Understanding the Actor model is outside the scope of this post. If you are not familiar with the Actor model I would recommend learning a little bit more so you can be sure to leverage this powerful programming model inside Service Fabric when appropriate. Another important note is the the level of reliability at which a Actor stores state can be configured.  They can be configured to store the state as persisted, volatile, and only in memory.
 
