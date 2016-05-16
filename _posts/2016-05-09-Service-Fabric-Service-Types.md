@@ -6,7 +6,7 @@ categories:
   - service fabric
 ---
 
-The model for [Service Fabric](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-overview/) allows for flexibility when it comes to designing the individual services, giving you the ability to pick the right programming model for each service.  Deciphering the multiple options can be complex and really depends on each scenario and service you are building.  Here I will try to break down the options.  Every application has many services and each service will likely have a different programming model so remember to assess each service individually.
+The model for [Service Fabric](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-overview/) allows for flexibility when it comes to designing the individual services, giving you the ability to pick the right programming model for each service.  Deciphering the multiple options can be complex and really depends on each scenario and service you are building.  Here I will try to break down the options how I see them.  Please leave feedback if it was helpful or you think of options in a different way.  Remember every application is composed of many services and each service will likely have a different programming model so assess each service individually.
 
 There are two main types of services you can build with Service Fabric:
 
@@ -72,3 +72,5 @@ The Service Fabric Programming model that you might use depends on the specific 
 There are two main types of services that can run inside Service Fabric. The first being Stateless services where state is stored in external service.  This is the familiar way to build services and applications today.  In the stateless applications you can either bring your own service or build one using the Service Fabric API's that let you tie into the Service Fabric runtime.  Tying into the runtime allows you to begin to leverage the platform to get more insight into your services.
 
 The second type is a Stateful service where the data is co-located with code that runs the service reducing latency and reducing service complexity. There are currently two models for building Stateful services: Reliable Service and Reliable Actors.  By choosing a Stateful service you are beginning to tap into the Service Fabric platform which goes beyond service orchestration.
+
+Hope that was a helpful break down of the services.  Let me know in the comments or tell me how you view the options for building services in Service Fabric.
