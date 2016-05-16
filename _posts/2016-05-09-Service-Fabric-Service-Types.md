@@ -8,6 +8,7 @@ categories:
 
 The model for [Service Fabric](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-overview/) allows for flexibility when it comes to designing the individual services, giving you the ability to pick the right programming model for each service.  Deciphering the multiple options can be complex and really depends on each scenario and service you are building.  Here I will try to break down the options how I see them.  Please leave feedback if it was helpful or you think of options in a different way.  Remember every application is composed of many services and each service will likely have a different programming model so assess each service individually.
 
+## Service Types
 There are two main types of services you can build with Service Fabric:
 
 - **[Stateless Services](#stateless-services)** - no state is maintained in the service.  Longer term state is stored in an external database.  This is your typical application/data layer approach to building services that you are already likely familiar with.
