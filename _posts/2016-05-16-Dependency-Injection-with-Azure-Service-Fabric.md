@@ -15,7 +15,7 @@ First lets take a look at how you register a Reliable Service.  There are a coup
 ServiceRuntime.RegisterServiceAsync("State1Type", context => new Service(context)).GetAwaiter().GetResult();
 ```
 
-Depending on the service type (stateful or stateless) the ```context``` that is passed into the service will either be a ```StatefulServiceContext``` or a ```StatelessServiceContext```.  Both derive from ```ServiceContect```.
+Depending on the service type (stateful or stateless) the ```context``` that is passed into the service will either be a ```StatefulServiceContext``` or a ```StatelessServiceContext```.  Both derive from ```ServiceContext```.
 
 As you can see we are already injecting our dependency on the ```ServiceContext``` into the service. Adding another dependency is easy:
 
