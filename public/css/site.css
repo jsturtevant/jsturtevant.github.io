@@ -104,3 +104,7 @@ footer {
   border-radius: 5px;
   padding: 5px
 }
+
+blockquote {
+  border-left-color:  #ac4142;
+}
