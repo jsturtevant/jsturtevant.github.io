@@ -11,12 +11,13 @@ Azure Service Fabric is a manage service that abstracts the server infrastructur
 
 During development you might mis-configure something and occasionally you might need to look at an individual server to diagnose an error.  This happened to me the other day and I learned how access a unique server via Remote Desktop (RDP) to look at the log files. Full Azure Portal support for [VM Scale Sets](https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/) is still in the works.  Here we will see how you can find the end points for your Virtual Machines and log in via Remote Desktop in the mean time.
 
-> Note: This is something that should be done as a last resort for debugging purposes only.  The underlying infrastructure is abstracted away and making changes can negative affect many things.  Also as Scale Set support in the portal becomes more robust this will likely no longer be needed.  Also if there is a better way make sure you leave a note in the comments.
+> Note: This is something that should be done as a last resort for debugging purposes only.  The underlying infrastructure is abstracted away and making changes can negatively affect many things.  Also as Scale Set support in the portal becomes more robust this will likely no longer be needed.  Also if there is a better way make sure you leave a note in the comments.
 
 ## Find your RDP end point for the machines
 When you create a Azure Service Fabric Cluster a lot of services are scaffolded out for you.  One of the services is the Load Balancer.  This is where we will find the Inbound NAT Rules that correspond to the VM's we have created.  Using this we can determine the port we should connect to in order to RDP into the server.
 
 First, navigate to your load balancer in the Azure Portal by opening your Service Fabric Cluster:
+
 1. Click on your Resource Group
 2. Click on the Load Balancer resource
 3. A pane should open that is labeled as "Load Balancer"
