@@ -32,9 +32,8 @@ You can install it from [Git for Windows](https://git-for-windows.github.io/).  
 ### Con's 
 
 - GUI is old school
-- default is to use a specific BASH prompt instead of standard command line
-- have to use installer
-
+- BASH tools are only available in BASH prompt by default
+- confusing installer with lots of options
 
 ## Using Chocolatey
 This is my preferred way to install the Git for Windows on Windows 10.  It installs the same package before but in one line.  If you have not heard of [Chocolatey](https://chocolatey.org/) stop everything and [go learn a bit more](https://chocolatey.org/about).  Chocolatey can install the software with a single command; you don't have to use click-through installers any more! If you are coming from Linux think of it as the apt-get/yum for Windows. Chocolatey is very powerful and I use it in combination with [Boxstarter](http://www.boxstarter.org/) to [set up my dev machines](http://www.jamessturtevant.com/posts/Chocolatey-And-Boxstarter/).  If you are in charge of setting up machines for developers on windows it is definitely worth a look.
