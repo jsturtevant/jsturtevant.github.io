@@ -8,7 +8,7 @@ categories:
 
 Git is a major part of a developers work flow these days no matter what platform you work on.  There are many different ways to install and use Git on Windows and in this post I will cover 5 different ways and talk about the pro's and con's of each.  At the end you should have a good idea of how to have a great experience with Git on Windows not matter what your scenario.  Be sure to let me know your favorite in the comments or if I missed one.   
 
-There is a walk through video for each of the ways to install git on Windows at [5 Ways to install Git on Channel 9](https://channel9.msdn.com/Blogs/jsturtevant/5-Way-to-Install-Git-on-Windows).
+There is a walk through video for each of the ways to install git on Windows coming soon.
 
 ## The Five ways
 Below are the 5 basic ways to install git on Windows. There are probably others but these are the ones that I tend to show developers.  I personally tend to end up installing git for command line usage *and* installing a GUI for more complex tasks.  There are a few tasks ([sqaushing commits](https://github.com/blog/2141-squash-your-commits)) that are easier on the command line and a few that are easier in a GUI (selecting single lines from multiple changes in a file for an atomic commit).  
@@ -22,7 +22,7 @@ Below are the 5 basic ways to install git on Windows. There are probably others 
 ## Git for Windows
 [Git For Windows](https://git-for-windows.github.io/) is the foundation for running Git on Windows.  Many of the other options listed are using Git for Windows (previously msygit) under the hood.  This option will install the git client, the windows implementation of BASH tools and a few Git GUI tools.  If you want just the raw tools then this is the installer for you.  If you want some more advance tooling then look to some of the other options.  I generally prefer to install this via a different option.
 
-You can install it from [Git for Windows](https://git-for-windows.github.io/).  The video walk-through is at [todo](https://channel9.msdn.com/Blogs/jsturtevant/5-Way-to-Install-Git-on-Windows).
+You can install it from [Git for Windows](https://git-for-windows.github.io/).  
 
 ### Pro's
 
@@ -46,7 +46,7 @@ Let's see how you would install git using Chocolatey.  I assume you have [Chocol
 choco install git -params '"/GitAndUnixToolsOnPath"'
 ```
 
-This will install git, the BASH tools and add them to your path.  Check out the video to see a walk-through [TODO](https://channel9.msdn.com/Blogs/jsturtevant/5-Way-to-Install-Git-on-Windows).
+This will install git, the BASH tools and add them to your path. 
 
 ### Pro's
 
@@ -61,7 +61,7 @@ This will install git, the BASH tools and add them to your path.  Check out the 
 ## Using Cmder
 This was my go to option before Windows 10  and would be what I recommend for anyone not using Windows 10.  The command line experience in older versions of Windows is poor (no resize/copy paste) and [Cmder](http://cmder.net/) brings together a set of awesome tools to make a great command line experience.  I always choose the larger install option, as it comes with git (again Git for Windows) and the BASH tools all hooked up.  Some of the other features it brings along are portability (which is great if you are running events), keyboard shortcuts like copy and paste, easy aliasing, and more.
 
-You install it by downloading the "Full" option on the [Cmder page](http://cmder.net/).  The video walk-through is at [todo](https://channel9.msdn.com/Blogs/jsturtevant/5-Way-to-Install-Git-on-Windows).
+You install it by downloading the "Full" option on the [Cmder page](http://cmder.net/).
 
 ### Pro's
 
@@ -92,8 +92,6 @@ I don't have a section on installing the GUI's in the video as there are to many
 This is one of the more promising solutions for the future.  At the time of writing, it is in preview on the Fast ring of the [Windows Insider program](https://insider.windows.com/).  I talk about why this is a promising solution on my [Thoughts on Build 2016](http://www.jamessturtevant.com/posts/Thoughts-on-Microsoft-Build-2016/) post along with a demo.  This allows us to run git *directly on BASH on Ubuntu on Windows*.  This means that we are not using a Windows implementation of BASH but the **real BASH**. More in-depth details on the from the developers themselves can be found at the discussion on [Linux Command Line on Windows](https://channel9.msdn.com/Events/Build/2016/C906).  This option is going to be really exciting for open source projects where developers might work on a variety of platforms. 
 
 The set up for this requires you to be on the Windows Insider program at the time of writing.  Once you have the latest insider build installed you can follow the instructions at https://blogs.msdn.microsoft.com/commandline/2016/04/06/bash-on-ubuntu-on-windows-download-now-3/.  
-
-Check out the video to see a walk-through [TODO](https://channel9.msdn.com/Blogs/jsturtevant/5-Way-to-Install-Git-on-Windows).
 
 ### Pro's
 
