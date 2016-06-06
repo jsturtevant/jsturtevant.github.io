@@ -34,6 +34,7 @@ Next, navigate to the NAT rules to find the VM instances and the ports configure
 
 ## Open RDP and log in
 Once you know your machines port number:
+
 1. Open the run dialog by typing ```Windows key + R```
 2. Type ```mstsc /v:<your-sf-cluster-name>.eastus.cloudapp.azure.com:<your port number>```
 3. Log into the machines using your user name and password that you created for the machines.
