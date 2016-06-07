@@ -112,7 +112,7 @@ public Task CloseAsync(CancellationToken cancellationToken)
 ### Register the Asp.Net Core Communication Listener with Service Fabric
 We have created the Asp.Net Core Communication Listener but still need to register it with the ```StatelessService``` that will be using ASP.NET.  There is a method on the ```StatelessSerivice``` Class that you can overload to return make the connection.  
 
-This is the integration point between Service Fabric and Asp.Net.  In the case of Stateless service this returns the an array of ```ServiceInstanaceListners```. 
+This is the integration point between Service Fabric and Asp.Net.  In the case of [Stateless service](/posts/Service-Fabric-Service-Types/) this returns the an array of ```ServiceInstanaceListners```. 
 
 In the Stateless Service class, override the ```CreateServiceInstanceListeners```:
 
