@@ -136,6 +136,6 @@ internal sealed class WebHostingService : StatelessService
 ````
 
 ## Next steps   
-This is a simple implementation of a Communication Listener for ASP.NET Core.   If you would like to see the full working sample, check out [this GitHub repository](https://github.com/jsturtevant/AspNetCoreTemplates).  I have implemented everything we talked about but also started to add in the ability to unit test the ```AspNetCoreCommunicationListener```. 
+This is a simple implementation of an Asp.net Core Communication Listener for Service Fabric.   If you would like to see the full working sample, check out [this GitHub repository](https://github.com/jsturtevant/AspNetCoreTemplates).  I have implemented everything we talked about but also started to add in the ability to unit test the ```AspNetCoreCommunicationListener```. 
 
 Eventually there will be a template that Visual Studio will ship with that will provide a default implementation.  The defualt will be a likely good choice for getting started but this exercise of working through how to implement a ```ICommunicationListner``` is a good introduction to the ```ICommunicationListener``` interface and helps us better understand another aspect of the Service Fabric platform.
