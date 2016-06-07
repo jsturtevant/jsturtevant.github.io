@@ -114,7 +114,7 @@ We have created the Asp.Net Core Communication Listener but still need to regist
 
 This is the integration point between Service Fabric and Asp.Net.  In the case of [Stateless service](/posts/Service-Fabric-Service-Types/) this returns the an array of ```ServiceInstanaceListners```. 
 
-In the Stateless Service class, override the ```CreateServiceInstanceListeners```:
+In the ```StatelessService``` class, override the ```CreateServiceInstanceListeners```:
 
 ```csharp
 internal sealed class WebHostingService : StatelessService
