@@ -85,7 +85,7 @@ Here is what the whole ```OpenAsync``` Method looks like:
 ```
 
 ### Implementing Abort and Close
-We still need to implement two more methods on the ```ICommunicationListener```:  ```Abort``` and ```CloseAsync``` before we are finished.  These are fairly simple implementations and just require us to dispose of the ```WebHost``` object. You could get fancier and make sure all requests are handled but for right now we will just shut down the web service as that is what is done in the ASP.NET Web API template currently.
+We still need to implement two more methods on the ```ICommunicationListener```   before we are finished: ```Abort``` and ```CloseAsync```.  These are fairly simple implementations and just require us to dispose of the ```WebHost``` object. You could get fancier and make sure all requests are handled but for right now we will just shut down the web service as that is what is done in the ASP.NET Web API template currently.
 
 ```csharp
 public void Abort()
