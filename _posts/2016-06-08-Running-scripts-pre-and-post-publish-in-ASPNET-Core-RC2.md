@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Running Scripts Pre and Post Publish in ASP.NET Core RC2
-date: "2016-06-06"
+date: "2016-06-08"
 categories:
   - aspnetcore
   - asp.net
