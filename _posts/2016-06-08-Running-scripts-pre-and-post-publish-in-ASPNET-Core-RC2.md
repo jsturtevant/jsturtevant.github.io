@@ -7,7 +7,7 @@ categories:
   - asp.net
 ---
 
-This week I ran into an issue when deploying a Service Fabric service where a library [file was not being copied to the output directory]().  Since I am using [ASP.NET Core for my API layer](/posts/Integrating-ASPNET-Core-With-Service-Fabric-using-ICommunicationListener/) in the Service Fabric project, I had to go dig around to figure out how to get the file to copy to the deployment folder during the [publishing of the ASP.NET Core application](https://docs.asp.net/en/latest/publishing/web-publishing-vs.html).  
+This week I ran into an issue when deploying a Service Fabric service where a library [file was not being copied to the output directory](/posts/Service-Fabric-ASPNET-Core-could-not-load-file-or-assembly-ServiceFabricServiceModel/).  Since I am using [ASP.NET Core for my API layer](/posts/Integrating-ASPNET-Core-With-Service-Fabric-using-ICommunicationListener/) in the Service Fabric project, I had to go dig around to figure out how to get the file to copy to the deployment folder during the [publishing of the ASP.NET Core application](https://docs.asp.net/en/latest/publishing/web-publishing-vs.html).  
 
 > note that this solution with project.json may change with as [ASP.NET Core moves back to .csproj file](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)
 
