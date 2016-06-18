@@ -57,6 +57,8 @@ There is a lot of information out there and it can be overwhelming.  Below is a 
 
 ## References
 
+- [Submit Your First Pull Request on GitHub](http://www.davepaquette.com/archive/2016/01/24/Submitting-Your-First-Pull-request.aspx) - Step by Step with photo's 
+
 - [Regular Expression Reference](http://msdn.microsoft.com/en-us/library/az24scfc(v=vs.110).aspx#character_escapes) - Quick reference for regular expressions.
 
 - [Git Book](http://git-scm.com/book/en/v2) - The entire Pro Git book online in a search-able format.
