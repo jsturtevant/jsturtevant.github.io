@@ -4,7 +4,7 @@ title:  "Speaking Engagements"
 date:   2016-10-04
 ---
 
-Here are few talks that might spark your interest.  My background is in building web applications for enterprises and startups and have recently been taking an interest in mobile development as a way to deliver unique experiences powered by intelligent web back-ends.  Please [reach out to me](https://twitter.com/Aspenwilder) if you don't see exactly what your looking for.
+Here are few talks that might spark your interest.  My background is in building web applications for enterprises and startups and have recently been taking an interest in mobile development as a way to deliver unique experiences powered by intelligent web backends.  Please [reach out to me](https://twitter.com/Aspenwilder) if you don't see exactly what your looking for.
 
 By Category:
 
