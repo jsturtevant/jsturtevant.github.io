@@ -4,9 +4,10 @@ title:  "Speaking Engagements"
 date:   2016-10-04
 ---
 
-Here are few talks that might spark you interst.  My background is in building web applications for entriprises and startups and have recently been taking an interest in mobile development as a way to deliver unique experiences powered by web backends.  Please [reach out to me](https://twitter.com/Aspenwilder) if you don't see exactly what your looking for.
+Here are few talks that might spark you interest.  My background is in building web applications for enterprises and startups and have recently been taking an interest in mobile development as a way to deliver unique experiences powered by intelligent web back-ends.  Please [reach out to me](https://twitter.com/Aspenwilder) if you don't see exactly what your looking for.
 
 By Category:
+
 - [Web Dev](#web-dev)
 - [Mobile](#mobile)
 - [Machine Learning](#machine-learning)
@@ -15,9 +16,10 @@ By Category:
 ## Web Dev 
 
 ### Building Location Based Applications 
-Augmented Reality and Location-based technologies have hit the mainstream in gaming but when it comes to other industries the full potential has yet to be realized.  In this session, we will cover backend design patterns and tradeoffs you need to consider while building scalable Location-Based Applications.   The patterns lend themselves to micro services that can scale independently and during this session we will look at a concrete implementation using Azure Service Fabric.  
+Augmented Reality and Location-based technologies have hit the mainstream in gaming but when it comes to other industries the full potential has yet to be realized.  In this session, we will cover backend design patterns and trade-offs you need to consider while building scalable Location-Based Applications.   The patterns lend themselves to micro services that can scale independently and during this session we will look at a concrete implementation using Azure Service Fabric.  
 
 Key Takeaways:
+
 - What are Location-based applications and why are they important
 - Techniques and design patterns and their trade-offs
 - How to leverage micro services to scale the individual components independently
@@ -50,6 +52,7 @@ Most applications require a backend service to do the complex processing.  In 
 The world we live in is becoming more connected every day. As mobile app developers, we need to design for inclusiveness. Beyond the UI considerations, this includes concerns like building experiences that support multiple languages, options for audio/text, and multiple bandwidth scenarios. We will look beyond the UI into architecture for several solutions, including a Xamarin app that was designed for Refugees in Amman, Jordon.  By the end of the session, you will have gained new insight into design decisions that will help you build inclusive applications.
 
 Key Takeaways:
+
 - Why is it important to build inclusive applications
 - UX and Architectural Design decisions to be aware of
 - See real-world code that can be used to enable inclusive applications
