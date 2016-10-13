@@ -28,12 +28,12 @@ After searching around for a few minutes I found [issue #2442 on GitHub](https:/
     ```
 2. Update the reference ```Microsoft.NETCore.App``` to include the ```type``` as ```platform```:
 
-```json
-"Microsoft.NETCore.App": {
-    "version": "1.0.1",
-    "type": "platform"
-}
-```
+    ```json
+    "Microsoft.NETCore.App": {
+        "version": "1.0.1",
+        "type": "platform"
+    }
+    ```
 
 ## Conclusion 
 For more information on .NET Core Application Deployment you can [read the docs](https://docs.microsoft.com/en-us/dotnet/articles/core/deploying/index).  This is again another reason I love that all this work is being done out in the open. It really makes finding issues and bugs of this type easier.  Hope that Helps!
