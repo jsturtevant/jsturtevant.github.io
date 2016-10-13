@@ -26,7 +26,6 @@ After searching around for a few minutes I found [issue #2442 on GitHub](https:/
     "win8-x64": {} 
 },
 ```
-
 2. Update the reference ```Microsoft.NETCore.App``` to include the ```type``` as ```platform```:
 
 ```json
