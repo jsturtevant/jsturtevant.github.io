@@ -18,7 +18,7 @@ You may be trying to publish a library, which is not supported. Use dotnet pack 
 ## Fix - Update project.json
 After searching around for a few minutes I found [issue #2442 on GitHub](https://github.com/dotnet/cli/issues/2442#issuecomment-233154291).  This the issue states that you need to update your ```project.json``` and you have two options:
 
-1. Include the platforms you want to build for explicitly:
+(1). Include the platforms you want to build for explicitly:
 
 ```json
 "runtimes": {
@@ -27,7 +27,7 @@ After searching around for a few minutes I found [issue #2442 on GitHub](https:/
 },
 ```
 
-2. Update the reference ```Microsoft.NETCore.App``` to include the ```type``` as ```platform```:
+(2). Update the reference ```Microsoft.NETCore.App``` to include the ```type``` as ```platform```:
 
 ```json
 "Microsoft.NETCore.App": {
