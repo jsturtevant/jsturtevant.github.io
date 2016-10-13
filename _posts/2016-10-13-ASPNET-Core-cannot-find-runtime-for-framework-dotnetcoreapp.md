@@ -20,12 +20,12 @@ After searching around for a few minutes I found [issue #2442 on GitHub](https:/
 
 1. Include the platforms you want to build for explicitly:
 
-```json
-"runtimes": {
-    "win10-x64": {},
-    "win8-x64": {} 
-},
-```
+    ```json
+    "runtimes": {
+        "win10-x64": {},
+        "win8-x64": {} 
+    },
+    ```
 2. Update the reference ```Microsoft.NETCore.App``` to include the ```type``` as ```platform```:
 
 ```json
