@@ -18,7 +18,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
  public final class R {
 ```
 
-The interesting part in the error message was the ```class file has wrong version 52.0, should be 50.0``` message.  This was ultimately what helped me find the error.  After a few minutes of searching, it was obvious that I had the wrong JDK version for building my assembly.  Most of the issues were Android Studio specific but I found an issue were this happened in Visual Studio.  This wasn't Visual Studio, instead VSTS but it got me down the right path.
+The interesting part in the error message was the ```class file has wrong version 52.0, should be 50.0``` message.  This was ultimately what helped me find the error.  After a few minutes of searching, it was obvious that I had the wrong JDK version for building my assembly.  Most of the issues were Android Studio specific but I found an issue were [this happened in Visual Studio](http://stackoverflow.com/questions/38011359/xamarin-upgrade-causes-class-file-has-wrong-version-52-0-should-be-50-0-error).  This wasn't Visual Studio, instead VSTS but it got me down the right path.
 
 ## Fix - Setting the Build Version explicitly in Build.Andriod step
 Now that I had some idea of what was going on I headed over to my VSTS Build process and noticed that there was an option in the ```Build Xamarin.Android``` step to set the JDK Version.  Looking at the output above I noticed I was using ```JDK 6```. I tried ```JDK 7``` and got the message ```Unsupported major.minor version 52.0```.  So I tried the only value left which was ```JDK 8``` and it worked.  Here is the screen shot of the updated setting:
