@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Making-Http-Web-Requests-in-Unity-with-Csharp
+title: Making Http Web Requests in Unity with CSharp
 date: "2016-10-26"
 categories:
   - unity
