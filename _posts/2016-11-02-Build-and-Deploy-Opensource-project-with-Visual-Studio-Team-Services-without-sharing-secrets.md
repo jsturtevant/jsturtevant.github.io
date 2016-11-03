@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build and Deploy Opensource project with Visual Studio Team Services without sharing secrets
+title: Build and Deploy an opensource project with Visual Studio Team Services without sharing secrets
 date: "2016-11-02"
 categories:
   - xamarin
