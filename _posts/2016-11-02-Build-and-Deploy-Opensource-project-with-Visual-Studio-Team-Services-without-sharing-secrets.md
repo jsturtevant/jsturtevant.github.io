@@ -5,6 +5,7 @@ date: "2016-11-02"
 categories:
   - xamarin
   - vsts
+  - opensource
 ---
 
 When working with an opensource project it is important to not keep the keys in your source control, otherwise [this happens](https://wptavern.com/ryan-hellyers-aws-nightmare-leaked-access-keys-result-in-a-6000-bill-overnight).  We all know we need to keep the secrects out of public source code but how do have a Continuous Integration/Continuous Deployment setup in the case of an open source project?  One solution to keep secrets out of the source code is to use envirornment varibables.  At runtime you read the enviroment variables that have been set up for the given environment.
