@@ -12,7 +12,7 @@ I got hooked on [Elixir](http://elixir-lang.org/) after reading [Programming Eli
 ## Installing Elixir
 To install Elixir using Chocolaty:
 
-1. Make sure you have (Chocolaty installed)[https://chocolatey.org/]. 
+1. Make sure you have [Chocolaty installed](https://chocolatey.org/). 
 2. Open an administrative ```cmd``` prompt
 3. Type ```choco install elixir``` (add ```-y``` to  skip install prompts)
 4. Restart your ```cmd``` prompt.
