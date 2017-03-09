@@ -20,8 +20,7 @@ The second option for Docker containers is one created by [Hans Kristian Flaatte
 4. Run the following command in the console: 
 
    ```
-   $ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
-     -it -p 4000:4000 jekyll/jekyll
+   $ docker run --rm --label=jekyll --volume=%CD%:/srv/jekyll  -it -p 4000:4000 jekyll/jekyll jekyll serve
    ```
 
 5. Visit the local address to view your site! (typically ```192.168.99.100:4000``` if you are using Docker on Mac or Windows)
