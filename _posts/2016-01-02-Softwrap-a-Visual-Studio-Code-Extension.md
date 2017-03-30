@@ -7,6 +7,8 @@ categories:
   - extensions
 ---
 
+> NOTE: This extention is no longer needed. Visual Studio now supports word wrap.  The defualt short cut is ```ALT -Z```
+
 I use [Visual Studio](https://www.visualstudio.com/) for most of my development work but I have always had a second editor that was smaller, lightweight and fast, to help accomplish those quick one off edits.  A second editor always comes in handy when working on a configuration files, text files or maybe just peeking at code in another project.  
 
 I have always used [NotePad++](https://notepad-plus-plus.org/) for quick edits because of the speed at which it opens files and  I currently use [Atom to write my blog posts](http://www.jamessturtevant.com/posts/atom-and-markdown-writer-for-jekyll/) as it has support for [Jekyll](http://jekyllrb.com/).  But, as a primarily .NET developer, I find that most of the editors don't have great out of the box support for C# syntax.  Sure I can set it up with great tooling like [Omnisharp](http://www.omnisharp.net/) but that's an extra thing I have to configure, even if it is [made easy with tools](http://www.jamessturtevant.com/posts/Chocolatey-And-Boxstarter/).
