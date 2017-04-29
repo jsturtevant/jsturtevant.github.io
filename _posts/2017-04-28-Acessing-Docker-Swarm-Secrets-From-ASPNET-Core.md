@@ -96,7 +96,7 @@ secrets:
 ```
 
 ## Creating an ASP.NET Core Configuration Provider
-I am going to leave it to the reader to create an ASP.NET Core Configuration Provider (or wait until it is a NuGet package supplied with ASP.NET Core 2.0).  If you turned into a configuration provider (or use ASP.NET Core 2.0's) you could simply use in you ```start.cs``` and it might look something like:
+I am going to leave it to the reader to create an ASP.NET Core Configuration Provider (or wait until it is a NuGet package supplied with ASP.NET Core 2.0).  If you decide to turn the code into a configuration provider (or use ASP.NET Core 2.0's) you could simply use in you ```start.cs``` and it might look something like:
 
 ```csharp
  public Startup(IHostingEnvironment env)
