@@ -33,26 +33,26 @@ docker run \
   -it microsoft/vsts-agent:ubuntu-16.04-docker-1.11.2
 ```
 
-This works for some things but if you using docker containers to build your source (and you should be considering it... it is even going to be [supported soon through multi-stage docker builds](http://blog.alexellis.io/mutli-stage-docker-builds/)), you may end up with some error like:
+This works for some things but if you using docker containers to build your source (and you should be considering it... it is even going to be [supported soon through multi-stage docker builds](http://blog.alexellis.io/mutli-stage-docker-builds/)), you may end up with some errors like:
 
 ```
 2017-04-14T01:38:00.2586250Z �[36munit-tests_1     |�[0m MSBUILD : error MSB1009: Project file does not exist.
 ```
 
-and 
+or 
 
 ```
 2017-04-14T01:38:03.0135350Z Service 'build-image' failed to build: lstat obj/Docker/publish/: no such file or directory
 ```
 
-You get these errors because the source code is downloaded into the agent docker container but then when you run the docker container from inside the agent, the container runs in the context of the host because the image uses docker on the host machine (that's what the line ```-v /var/run/docker.sock:/var/run/docker.sock``` does), which doesn't have your files.  
+You get these errors because the source code is downloaded into the VSTS agent docker container.  When you run a docker container from inside the VSTS agent, the new container runs in the context of the host machine because the VSTS agent uses docker on the host machine which doesn't have your files (that's what the line ```-v /var/run/docker.sock:/var/run/docker.sock``` does).  If this hurts your brain, you in good company.
 
 ## Agent that supports using Containers to build source
 Finally, we come to the part you are most interested in.  How do we actually set up one of these agents and avoid the above errors?  
 
-There is an environment variable called ```VSTS_WORK``` that specifies where the work should be done by the agent.  When using docker containers for the agent to build the project we can change the location of the directory and volume mount it so that when the docker container runs on the host it will have access to the files.
+There is an environment variable called ```VSTS_WORK``` that specifies where the work should be done by the agent.  We can change the location of the directory and volume mount it so that when the docker container runs on the host it will have access to the files.
 
-To create an agent that is capable of using docker:
+To create an agent that is capable of using docker in this way:
 
 ```
 docker run -e VSTS_ACCOUNT=<youraccountname>  \
