@@ -6,6 +6,9 @@ categories:
   - azure
 ---
 
+<p class="message">This post is now out of date.  If you are interested in running PostgreSQL on Azure you can checkout the fully managed <a href="https://azure.microsoft.com/en-us/services/postgresql/">Azure Database for PostgreSQL</a> or find a <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=postgresql&page=1">PostgreSQL solution in the Azure Market Place</a>.  
+</p>
+
 There are a few different ways to spin up an [PostgreSQL](http://www.postgresql.org/) database in [Microsoft Azure](https://azure.microsoft.com/en-us/).  One of the easiest ways is via the [MS Open Tech VM Depot](https://vmdepot.msopentech.com/List/Index).  The VM Depot is a collection of preconfigured VM's that you can deploy to azure and is great if you want to install a complete stack such as [LAMP](https://vmdepot.msopentech.com/List/Index?sort=Featured&search=LAMP) or [LAPP](https://vmdepot.msopentech.com/List/Index?sort=Featured&search=LAPP).  If you choose this option then you can skip down below to [configuring PostgreSQL](#configure).
 
 Another option is to spin up a Linux VM and install PostgreSQL directly.  This is a good option if you are only going to install PostgreSQL and don't need a complete stack installed on a machine.  
