@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Creating a Finite State Machine with Service Fabric Reliable Actors
+title: Creating a Finite State Machine Distributed Workflow with Service Fabric Reliable Actors
 date: "2017-11-21"
 categories:
   - service fabric
   - csharp
 ---
+
+<p class="message">The accompanying source code can be found at <a href="https://github.com/jsturtevant/azure-service-fabric-actor-fsm">github.com/jsturtevant/azure-service-fabric-actor-fsm</a>.
+</p>
 
 I recently had to manage a long running workflow inside Azure Service Fabric solution.  I remembered reading about using a [Finite State Machine](https://en.wikipedia.org/wiki/Finite-state_machine) (FSM) with Actors in the book [Programming Microsoft Azure Service Fabric](https://www.amazon.com/Programming-Microsoft-Service-Developer-Reference/dp/1509301887/) by Haishi Bai.  When I went looking for examples of how I might use a FSM with the [Service Fabric Actor Programming model](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-reliable-actors-introduction) I wasn't able to find one, so I built [an example of using a FSM with Service Fabric Actors](https://github.com/jsturtevant/azure-service-fabric-actor-fsm).
 
