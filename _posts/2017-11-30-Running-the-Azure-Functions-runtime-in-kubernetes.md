@@ -102,7 +102,6 @@ Some other interesting scenarios you can looking into are:
 - Other scaling parameters using [custom metrics](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 - Running the [Azure Function portal](https://github.com/Azure/azure-functions-ux) for Adminstration
 - Creating a Helm Chart to manage the deployments of multiple Function Apps
-- Using Azure Service Broker as part of the deployment and scale between them
 
 
 
