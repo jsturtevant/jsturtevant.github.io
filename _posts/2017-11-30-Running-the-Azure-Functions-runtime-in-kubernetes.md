@@ -60,7 +60,7 @@ Set up auto Scaling by:
 kubectl autoscale deployment azfunctions --cpu-percent=50 --min=1 --max=10
 ```
 
-> Note:  For the auto-scaler to work you need to create you deployment with the `--requests=cpu=200m` property as we did above.  It is possible to [autoscale on other metrics as well](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
+> Note:  For the auto-scaler to work you need to create you deployment with the `--requests=cpu=200m` property as we did above in `kubectl run` command.  It is possible to [autoscale on other metrics as well](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
 
 ## Test Autoscaling
 We have enabled auto scaling so let give it a spin. We will test it the same way as in [Kubernetes Pod Autoscale walk through](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/).
