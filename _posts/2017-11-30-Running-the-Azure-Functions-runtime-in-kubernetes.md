@@ -8,6 +8,9 @@ categories:
   - azure
 ---
 
+<p class="message">This is a two part series. The second post is on  <a href="/posts/Using-Helm-to-Deploy-Azure-functions-on-Kubernetes/">Deploying an Azure Function App to Kubernetes using a Helm Chart.</a>.
+</p>
+
 The Azure Functions team recently released the preview of [Azure Functions on Linux](https://blogs.msdn.microsoft.com/appserviceteam/2017/11/15/functions-on-linux-preview/).  A colleague [Vy Ta](https://twitter.com/vytachar) and I thought it would be fun to see if we could get Azure Functions running in Kubernetes.  Here are the steps to get it work.  To follow along you will need to have:
 
 - [.NET Core 2.0](https://www.microsoft.com/net/download/linux)
