@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-Helm-to-Deploy-Azure-Functions-on-Kubernetes
+title: Using Helm to Deploy Azure Functions on Kubernetes
 date: "2017-11-30"
 categories:
   - azure-functions
