@@ -8,6 +8,9 @@ categories:
   - nodejs
 ---
 
+<p class="message">The accompanying source code can be found at <a href="https://github.com/jsturtevant/azure-event-grid-nodejs">https://github.com/jsturtevant/azure-event-grid-nodejs</a>.
+</p>
+
 It is possible to register your own webhook endpoint with [Azure Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/).  To do so you need to pass the [Event Grid Validation process](https://docs.microsoft.com/en-us/azure/event-grid/security-authentication) which happens when you first subscribe your endpoint to a Event Grid Topic.  
 
 At subscription time, Event Grid will make a HTTP `POST` request to you endpoint with a header value of `Aeg-Event-Type: SubscriptionValidation`.  Inside the request there will be a validation code that you need to echo back to the service.  A sample request will look like:
