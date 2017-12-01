@@ -8,7 +8,7 @@ categories:
   - azure
 ---
 
-In the previous post on running [Azure Functions on Kubernetes](posts/Running-the-Azure-Functions-runtime-in-kubernetes/) we deployed everything using manual commands.  To improve upon the solution, I created a [Helm Chart](https://docs.helm.sh/developing_charts/#charts) that enables you to deploy the Function Application.  There are a few advantages to this:
+In the previous post on running [Azure Functions on Kubernetes]({{ site.url }}/posts/Running-the-Azure-Functions-runtime-in-kubernetes/) we deployed everything using manual commands.  To improve upon the solution, I created a [Helm Chart](https://docs.helm.sh/developing_charts/#charts) that enables you to deploy the Function Application.  There are a few advantages to this:
 
 - Simplified upgrades
 - Simplify the deployment of multiple Functions

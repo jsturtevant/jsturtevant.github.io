@@ -104,7 +104,7 @@ Some other interesting scenarios you can looking into are:
 
 - Other scaling parameters using [custom metrics](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 - Running the [Azure Function portal](https://github.com/Azure/azure-functions-ux) for Adminstration
-- Creating a Helm Chart to manage the deployments of multiple Function Apps
+- Creating a [Helm Chart to manage the deployments of multiple Function Apps]({{ site.url }}/posts/Using-Helm-to-Deploy-Azure-functions-on-Kubernetes/)
 
 
 
