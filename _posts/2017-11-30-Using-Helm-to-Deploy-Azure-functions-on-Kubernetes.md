@@ -14,7 +14,7 @@ In the previous post on running [Azure Functions on Kubernetes]({{ site.url }}/p
 - Simplify the deployment of multiple Functions
 - Simplify the CI/CD of multiple Function App
 
-Checkout the chart at https://github.com/jsturtevant/azure-functions-kubernetes-chart. There are a few improvements that need to be made, such as setting up with Secrets for a private repository to pull the image.  PR's are welcome :-).
+Checkout the chart at [https://github.com/jsturtevant/azure-functions-kubernetes-chart](https://github.com/jsturtevant/azure-functions-kubernetes-chart). There are a few improvements that need to be made, such as setting up with Secrets for a private repository to pull the image.  PR's are welcome :-).
 
 ## Usage
 To use, `clone` the [repository](https://github.com/jsturtevant/azure-functions-kubernetes-chart) and `cd` into the folder and run:
