@@ -7,7 +7,7 @@ categories:
   - wsl
 ---
 
-Sometimes you want to be able to deploy and develop applications locally with out having to spin up an entire cluster.  Setting up Minikube on Windows 10 hasn't been the easiest thing to do but with the help of a colleague, [Noel Bundick](https://www.noelbundick.com/) and [GitHub issues](https://github.com/kubernetes/minikube/issues/2131), I got it working this week so this post is for me in the future when I can't remember how i did it.:-).
+Sometimes you want to be able to deploy and develop applications locally with out having to spin up an entire cluster.  Setting up Minikube on Windows 10 hasn't been the easiest thing to do but with the help of a colleague, [Noel Bundick](https://www.noelbundick.com/) and [GitHub issues](https://github.com/kubernetes/minikube/issues/2131), I got it working this week so this post is for me in the future when I can't remember how i did it :-).
 
 ## Install Minikube
 This part is pretty easy if you use [Chocolately](https://chocolatey.org/) (not using Chocolatly?  [Check out why you should]({{ site.url }}/posts/Chocolatey-And-Boxstarter/)).  Alternatively you can [download it and add it to your path](https://github.com/kubernetes/minikube/releases).
