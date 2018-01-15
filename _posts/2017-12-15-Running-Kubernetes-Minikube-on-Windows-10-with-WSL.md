@@ -48,7 +48,7 @@ minikube start --vm-driver hyperv --hyperv-virtual-switch minikube
 Minikube adds the configuration to your `.kube/config` file upon successful creation so you should be able to connect to the minikube from the *powershell* prompt using `kubectl` if you have it [installed on windows](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-chocolatey-on-windows):
 
 ```powershell
-kubectrl get nodes
+kubectl get nodes
 
 #output
 NAME       STATUS    ROLES     AGE       VERSION
@@ -60,7 +60,7 @@ I mostly use WSL as my command prompt in Windows these days which means I have `
 
 > Note: the following might vary depending on your existing `.kube/config` file and set up.  Check out [sharing cluster access on kubernetes docs for more info](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/) and alternative ways to configure.  
 
-To see the values created on for you *windows environment* you can run `kubectl context view` from your *powershell* prompt.  Use those values for the minikube entries below.
+To see the values created on for you *windows environment* you can run `kubectl config view` from your *powershell* prompt.  Use those values for the minikube entries below.
 
 From your WSL terminal add the minikube context info:
 
