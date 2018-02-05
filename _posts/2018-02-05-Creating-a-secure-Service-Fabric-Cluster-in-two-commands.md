@@ -12,10 +12,7 @@ Creating a Secure Fabric cluster in Azure has become easier.  Currently if you u
 ```cmd
 az group create --name <resource-group-name> --location eastus
 
-az sf cluster create --resource-group <resource-group-name> --location eastus \
- --certificate-output-folder . --certificate-password <password> --certificate-subject-name <clustername>.eastus.cloudapp.azure.com \
- --cluster-name <cluster-name> --cluster-size 5 --os WindowsServer2016DatacenterwithContainers --vault-name <keyvault-name> \
- --vault-resource-group <resource-group-name> --vm-password <vm-password> --vm-user-name azureadmin
+az sf cluster create --resource-group <resource-group-name> --location eastus --certificate-output-folder . --certificate-password <password> --certificate-subject-name <clustername>.eastus.cloudapp.azure.com --cluster-name <cluster-name> --cluster-size 5 --os WindowsServer2016DatacenterwithContainers --vault-name <keyvault-name> --vault-resource-group <resource-group-name> --vm-password <vm-password> --vm-user-name azureadmin
 ```
 
 ## Connect
@@ -28,7 +25,7 @@ To install the cert so you can connect to the Service Fabric explorer:
 powershell.exe Import-PfxCertificate -FilePath .\<yourpfx>.pfx -CertStoreLocation 'Cert:\CurrentUser\My\'
 ```
 
-Browse to you Service Fabric Explorer (https://<yourclustername>.eastus.cloudapp.azure.com:19080/Explorer) and when prompted select your certificate:
+Browse to you Service Fabric Explorer (https://yourclustername.eastus.cloudapp.azure.com:19080/Explorer) and when prompted select your certificate:
 
 ![select correct certificate for service fabric explorer]({{ site.url }}/assets/sf-create-secure-cluster-with-az.png)
 
