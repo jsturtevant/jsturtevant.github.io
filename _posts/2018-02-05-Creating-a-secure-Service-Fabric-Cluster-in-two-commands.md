@@ -7,7 +7,7 @@ categories:
   - azure
 ---
 
-Creating a Secure Fabric cluster in Azure has become easier.  Currently if you use the [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/overview?view=azure-cli-latest) you can do it in only two commands.  Note, you may wish to change the location or operating system parameters.
+Creating a Secure Fabric cluster in Azure has become easier.  Currently if you use the [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/overview?view=azure-cli-latest) you can do it in only two commands.  Note that you may wish to change the location or operating system parameters.
 
 ```cmd
 az group create --name <resource-group-name> --location eastus
@@ -16,7 +16,7 @@ az sf cluster create --resource-group <resource-group-name> --location eastus \
  --certificate-output-folder . --certificate-password <password> --certificate-subject-name <clustername>.eastus.cloudapp.azure.com \
  --cluster-name <cluster-name> --cluster-size 5 --os WindowsServer2016DatacenterwithContainers --vault-name <keyvault-name> \
  --vault-resource-group <resource-group-name> --vm-password <vm-password> --vm-user-name azureadmin
-``
+```
 
 ## Connect
 The command above creates the cluster and drops the `pfx` and `pem` files for the certificate to your current folder.  You can connect to your cluster through the Service Fabric Explorer or through the [Service Fabric Cli](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cli) (sfctl).
