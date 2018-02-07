@@ -12,7 +12,36 @@ Creating a Secure Fabric cluster in Azure has become easier.  Currently if you u
 ```cmd
 az group create --name <resource-group-name> --location eastus
 
-az sf cluster create --resource-group <resource-group-name> --location eastus --certificate-output-folder . --certificate-password <password> --certificate-subject-name <clustername>.eastus.cloudapp.azure.com --cluster-name <cluster-name> --cluster-size 5 --os WindowsServer2016DatacenterwithContainers --vault-name <keyvault-name> --vault-resource-group <resource-group-name> --vm-password <vm-password> --vm-user-name azureadmin
+az sf cluster create 
+  --resource-group <resource-group-name> \
+  --location eastus \
+  --certificate-output-folder . \
+  --certificate-password <password> \
+  --certificate-subject-name <clustername>.eastus.cloudapp.azure.com \
+  --cluster-name <cluster-name> \
+  --cluster-size 5 \
+  --os WindowsServer2016DatacenterwithContainers \
+  --vault-name <keyvault-name> \
+  --vault-resource-group <resource-group-name> \
+  --vm-password <vm-password> \
+  --vm-user-name azureadmin
+```
+
+## Using an ARM Template
+It is possible to create the cluster with a specified ARM template with `--template-file` and `--parameter-file`.  Working with [Noel](https://www.noelbundick.com), I found that in the the ARM parameter template (`parameters.json`) you need provide entries with *blank* values for `certificateThumbprint`, `sourceVaultValue`, and `certificateUrlValue`.  This will create certificate and drop it on your machine as well.
+
+An example is:
+
+```
+az sf cluster create \
+  -g <rg-name> \
+  -l eastus \
+  --template-file template.json \
+  --parameter-file parameters.json \
+  --vault-name <vault-name> \
+  --certificate-subject-name <clustername>.eastus.cloudapp.azure.com \
+  --certificate-password <password> \
+  --certificate-output-folder .
 ```
 
 ## Connect
@@ -41,3 +70,12 @@ sfctl node list
 
 ## Your certs
 If you review the command we ran to create the cluster you will notice that you create an [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/).  If you ever need to get your private keys you can head back to the [Key Vault resource](https://docs.microsoft.com/en-us/rest/api/keyvault/certificates-and-policies) either via the CLI or the portal to get your keys.
+
+Thanks [Vy Ta](https://twitter.com/vytachar) here is a quick example:
+
+```cmd
+az keyvault secret download --vault-name <vault-name> -n <key-name> -f pfx-out.pfx
+
+# if you want the pem
+openssl pkcs12 -in pfx-out.pfx -out pem-out.pem -nodes
+```
