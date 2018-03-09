@@ -55,13 +55,14 @@ FROM microsoft/nanoserver:10.0.14393.1770
 There are also sorts of tricks and tips that you can use.  You should checkout [Stephan's](https://github.com/StefanScherer/dockerfiles-windows) and [Elton's](https://github.com/sixeyed/dockerfiles-windows) GitHub Repo's for great examples on how to containerize almost anything.
 
 ### Download files
-There are [several ways to download](https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell) files. 
+There are [several ways to download](https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell) files. Soon you will be able to use [curl](https://blogs.technet.microsoft.com/virtualization/2017/12/19/tar-and-curl-come-to-windows/).
 
 ```dockerfile
 RUN Invoke-WebRequest -UseBasicParsing  -Uri $url -OutFile 'outfile.zip'; 
 ```
 
 ### Extract Files
+Soon you will be able to use [tar](https://blogs.technet.microsoft.com/virtualization/2017/12/19/tar-and-curl-come-to-windows/).
 
 ```dockerfile
 RUN Expand-Archive outfile.zip -DestinationPath C:\temp\;
@@ -76,7 +77,7 @@ RUN Start-Process you-executable.exe -ArgumentList '--paramter', 'value' -NoNewW
 ### Set Environment variable
 
 ```dockerfile
-RUN setx /M DOTNET_SKIP_FIRST_TIME_EXPERIENCE 1; 
+RUN setx /M ENV_VARIABLE value; 
 ```
 
 ### User Chocolately as a package Provider in Powershell
@@ -93,11 +94,11 @@ RUN Install-PackageProvider -Name chocolatey -RequiredVersion 2.8.5.130 -Force; 
 FROM microsoft/windowsservercore
 
 RUN Write-Host 'Line 1.'; `
-	  Write-Host 'Line 2';
+    Write-Host 'Line 2';
 ```
 
 ### Debug .NET Framework app in Container
-Instructions at https://www.richard-banks.org/2017/02/debug-net-in-windows-container.html. 
+Instructions at [https://www.richard-banks.org/2017/02/debug-net-in-windows-container.html](https://www.richard-banks.org/2017/02/debug-net-in-windows-container.html). 
 
 ### Enable Web Auth in IIS
 This also demonstrates how to set web.config files in asp.net.
