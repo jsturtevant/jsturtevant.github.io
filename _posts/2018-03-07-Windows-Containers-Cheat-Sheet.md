@@ -9,7 +9,7 @@ categories:
 
 I have been using windows containers a lot in the last month and the other day I was asked how to do something.  I don't remember anything, I use a combination of GitHub, OneNote, and Bingle (Bing/Google) for that, so of course I started looking for the various examples in various GitHub repo's that I've used and written.  Turns out this is not very efficient.  
 
-Instead, I am going to create this living document as a Windows Container Cheat Sheet ([this blog is on GitHub so you can submit a PR]() if I missed anything you think is useful).  It will serve as a quick reference for myself but hopefully can help beginners get a lay of the land.
+Instead, I am going to create this living document as a Windows Container Cheat Sheet ([this blog is on GitHub so you can submit a PR](https://github.com/jsturtevant/jsturtevant.github.io/edit/master/_posts/2018-03-07-Windows-Containers-Cheat-Sheet.md) if I missed anything you think is useful).  It will serve as a quick reference for myself but hopefully can help beginners get a lay of the land.
 
 This first section has [general links about Windows Containers](#general-info), jump to the [dev resources](#development-resources-and-tips) if your already familiar.
 
