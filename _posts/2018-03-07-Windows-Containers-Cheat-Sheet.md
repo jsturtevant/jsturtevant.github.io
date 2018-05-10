@@ -53,7 +53,11 @@ FROM microsoft/nanoserver:10.0.14393.1770
 ```
 
 ## Development Resources and Tips
-There are also sorts of tricks and tips that you can use.  You should checkout [Stephan's](https://github.com/StefanScherer/dockerfiles-windows) and [Elton's](https://github.com/sixeyed/dockerfiles-windows) GitHub Repo's for great examples on how to containerize almost anything.  I also started an [repository with examples](https://github.com/jsturtevant/dockerfiles-windows) for anything that I come across that is not in theirs.
+There are also sorts of tricks and tips that you can use.  For examples, you should checkout:
+- [Stephan's](https://github.com/StefanScherer/dockerfiles-windows) 
+- [Elton's](https://github.com/sixeyed/dockerfiles-windows) 
+- [My repository with examples](https://github.com/jsturtevant/dockerfiles-windows)  for anything not found in the above examples
+- [Windows Dockerfile Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
 
 ### Download files
 There are [several ways to download](https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell) files. Soon you will be able to use [curl](https://blogs.technet.microsoft.com/virtualization/2017/12/19/tar-and-curl-come-to-windows/).
