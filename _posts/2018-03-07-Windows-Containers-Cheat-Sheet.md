@@ -53,7 +53,7 @@ FROM microsoft/nanoserver:10.0.14393.1770
 ```
 
 ## Development Resources and Tips
-There are also sorts of tricks and tips that you can use.  You should checkout [Stephan's](https://github.com/StefanScherer/dockerfiles-windows) and [Elton's](https://github.com/sixeyed/dockerfiles-windows) GitHub Repo's for great examples on how to containerize almost anything.
+There are also sorts of tricks and tips that you can use.  You should checkout [Stephan's](https://github.com/StefanScherer/dockerfiles-windows) and [Elton's](https://github.com/sixeyed/dockerfiles-windows) GitHub Repo's for great examples on how to containerize almost anything.  I also started an [repository with examples](https://github.com/jsturtevant/dockerfiles-windows) for anything that I come across that is not in theirs.
 
 ### Download files
 There are [several ways to download](https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell) files. Soon you will be able to use [curl](https://blogs.technet.microsoft.com/virtualization/2017/12/19/tar-and-curl-come-to-windows/).
@@ -179,7 +179,6 @@ Figuring out open ports and assigned ip addresses.
 netstat -a
 ipconfig
 ```
-
 
 ### General Trouble shooting
 There are some great tips on how to find logs and debug issues you might run into at [https://docs.microsoft.com/en-us/virtualization/windowscontainers/troubleshooting](https://docs.microsoft.com/en-us/virtualization/windowscontainers/troubleshooting).
