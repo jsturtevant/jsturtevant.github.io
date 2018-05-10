@@ -16,7 +16,7 @@ This first section has [general links about Windows Containers](#general-info), 
 ## General Info
 
 ### Where to find 
-The first place you should know about is the [Official Windows Container Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/).  
+The first place you should know about is the [Official Windows Container Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/) and info on [licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows-server-2016.aspx) and [pricing](https://www.microsoft.com/en-us/cloud-platform/windows-server-pricing).
 
 ### Windows Container Flavors
 There are two flavors of Windows Containers: 
@@ -38,6 +38,7 @@ The current version's are:
 
 - Windows Server 2016 (ltsc)
 - Windows Server 1709 (sac)
+- Windows Server 1803 (sac)
 
 > Note: if you are running nanoserver it only has the Semi-Annual Channel Release (sac)
 
@@ -112,6 +113,18 @@ RUN powershell.exe -NoProfile -Command `
   Set-WebConfigurationProperty -filter /system.webServer/security/authentication/windowsAuthentication -name enabled -value true -PSPath IIS:\ 
 ```
 
+### Give IIS access to folder for logging
+
+```
+RUN icacls C:/inetpub/wwwroot/App_Data /grant IIS_IUSRS:f /T
+```
+
+### Install MSI silently
+
+```
+RUN Start-Process msiexec.exe -ArgumentList '-i', 'installer.msi', '/quiet', '/passive' -NoNewWindow -Wait;
+```
+
 ### Powershell Core in 1709
 The [nanoserver with Powershell Core](https://hub.docker.com/r/microsoft/powershell/) installed:
 
@@ -134,6 +147,39 @@ COPY --from=builder /app /app
 
 CMD ["yourapp.exe"]
 ```
+
+### VSTS Build CI/CD
+Set up a full pipeline in [Visual Studio Team Services for Windows Containers](https://code4clouds.com/2018/04/09/windows-container-pipeline/).
+
+## Debugging inside a container (During dev)
+List of commands to run to see various state of your container.  There is no UI so here are a few commands to get you started.
+
+### List process and Service running in container
+
+```powershell
+Get-service
+List-processes 
+```
+
+### Get Event Log
+
+```powershell
+# this shows source as 'Docker' but can change you 'Application' or custom
+Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time
+ 
+# can also store in variable to see message detail
+$el = Get-EventLog -LogName Application -Source Docker | Sort-Object Time
+$el[0].Message
+```
+
+### Networking information
+Figuring out open ports and assigned ip addresses.
+
+```cmd
+netstat -a
+ipconfig
+```
+
 
 ### General Trouble shooting
 There are some great tips on how to find logs and debug issues you might run into at [https://docs.microsoft.com/en-us/virtualization/windowscontainers/troubleshooting](https://docs.microsoft.com/en-us/virtualization/windowscontainers/troubleshooting).
