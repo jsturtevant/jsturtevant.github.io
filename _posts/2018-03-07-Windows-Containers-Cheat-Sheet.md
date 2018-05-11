@@ -66,6 +66,13 @@ There are [several ways to download](https://blog.jourdant.me/post/3-ways-to-dow
 RUN Invoke-WebRequest -UseBasicParsing  -Uri $url -OutFile 'outfile.zip'; 
 ```
 
+### Enable Tls 1.2
+If you get the error message (currently any requests to GitHub): `Invoke-WebRequest : The request was aborted: Could not create SSL/TLS secure channel.`
+
+```dockerfile
+RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+```
+
 ### Extract Files
 Soon you will be able to use [tar](https://blogs.technet.microsoft.com/virtualization/2017/12/19/tar-and-curl-come-to-windows/).
 
