@@ -70,4 +70,4 @@ This will allow the Service principal used to access the the IP Addresses in the
 
 > note: to access the ip address in group outside the cluster you will need to provide an annotation on the k8s `Service` definition (`service.beta.kubernetes.io/azure-load-balancer-resource-group`).  See the [example](https://github.com/jsturtevant/aks-examples/blob/e1ea6ebf7c3fc34e34d9ee1ce8776c1293d8a598/least-privileged-sp/k8s/deployment.yml#L24). 
 
-Check out the [sample for a full walk through]((https://github.com/jsturtevant/aks-examples/tree/master/least-privileged-sp)).
+Check out the [sample for a full walk through]((https://github.com/jsturtevant/aks-examples/tree/master/least-privileged-sp).
