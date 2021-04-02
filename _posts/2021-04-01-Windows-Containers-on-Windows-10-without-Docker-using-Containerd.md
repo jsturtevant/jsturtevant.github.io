@@ -189,8 +189,8 @@ You will note the endpoint is the name as the Ethernet Adapter and the ipddresss
 
 ## Helpful links that I used to compile this walk through
 
-- https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md
-- https://kubernetes.io/docs/tasks/debug-application-cluster/crictl/
-- https://github.com/kubernetes-sigs/sig-windows-tools/blob/master/kubeadm/scripts/Install-Containerd.ps1
-- https://github.com/containerd/containerd/blob/master/script/setup/install-cni-windows
+- [https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
+- [https://kubernetes.io/docs/tasks/debug-application-cluster/crictl/](https://kubernetes.io/docs/tasks/debug-application-cluster/crictl/)
+- [https://github.com/kubernetes-sigs/sig-windows-tools/blob/master/kubeadm/scripts/Install-Containerd.ps1](https://github.com/kubernetes-sigs/sig-windows-tools/blob/master/kubeadm/scripts/Install-Containerd.ps1)
+- [https://github.com/containerd/containerd/blob/master/script/setup/install-cni-windows](https://github.com/containerd/containerd/blob/master/script/setup/install-cni-windows)
 
