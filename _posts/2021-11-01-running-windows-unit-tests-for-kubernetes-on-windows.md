@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running Windows Unit tests for Kubenretes on Windows
+title: Running Windows Unit tests for Kubernetes on Windows
 date: "2021-11-01"
 categories:
   - kubernetes
