@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rust Traits are not interfaces (and a little on Lifetimes)
-date: "2021-11-01"
+date: "2023-01-23"
 categories:
   - rust
 ---
