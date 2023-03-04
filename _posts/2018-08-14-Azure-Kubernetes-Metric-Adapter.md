@@ -8,6 +8,8 @@ categories:
   - docker
 ---
 
+> NOTE: This project is no longer actively maintained and some of the information might be outdated.  Please checkout [KEDA](https://keda.sh/).  The scenarios described below have been ported to that project.
+
 > TLDR;  The [Azure Kubernetes Metric Adapter](https://github.com/Azure/azure-k8s-metrics-adapter) is a experimental component that enables you to scale your [application deployment pods](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) running on any Kubernetes cluster using the [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) (HPA) with [External Metrics](#external-metrics) from Azure Resources (such as [Service Bus Queues](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues)) and [Custom Metrics](#custom-metrics) stored in Application Insights. 
 > 
 > Checkout a [video showing how scaling works with the adapter](https://www.youtube.com/watch?v=5pNpzwLLzW4&feature=youtu.be), [deploy the adapter](#deploy) or [learn by going through the walkthrough](samples/servicebus-queue/readme.md).
